@@ -87,10 +87,10 @@ export default function Nav() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/lee_logo.svg"
+                src="/logo.png"
                 alt="leeeunjae.com"
-                width={100}
-                height={48}
+                width={120}
+                height={58}
                 className={`transition-colors duration-200 ${
                   isDarkMode ? '' : 'brightness-0'
                 }`}
