@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* 다크모드 커스텀 variant 설정 */
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,12 +15,13 @@ html {
 }
 
 @theme dark {
-  --color-background: #000000;
-  --color-foreground: #ffffff;
+  --color-background: #0f0f0f;
+  --color-foreground: #fafafa;
 }
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
