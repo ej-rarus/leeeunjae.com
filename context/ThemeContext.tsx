@@ -51,8 +51,8 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     if (savedTheme && ['light', 'dark', 'system'].includes(savedTheme)) {
       setThemeState(savedTheme);
     } else {
-      // 기본값을 시스템으로 설정
-      setThemeState('system');
+      // 기본값을 라이트모드로 설정
+      setThemeState('light');
     }
   }, []);
 
