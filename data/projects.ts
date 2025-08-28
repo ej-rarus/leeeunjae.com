@@ -43,5 +43,16 @@ export const projects: Project[] = [
     buttonText: "자세히 보기",
     href: "/projects/farmbit-ui",
     iconType: "api"
+  },
+  {
+    id: "test-ui",
+    title: "test Farmbit UI",
+    description: "Farmbit 스마트팜 디바이스 UI",
+    technologies: ["React.js", "TypeScript", "MongoDB", "PLC", "Websocket","NodeRed"],
+    gradientFrom: "from-purple-400",
+    gradientTo: "to-pink-500",
+    buttonText: "자세히 보기",
+    href: "/projects/farmbit-ui",
+    iconType: "api"
   }
 ];

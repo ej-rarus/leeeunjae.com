@@ -1,4 +1,5 @@
 import Nav from "@/components/layout/Nav";
+import PhotoGallery from "@/components/shared/PhotoGallery";
 
 export default function Life() {
   return (
@@ -14,6 +15,9 @@ export default function Life() {
               개발자로서의 일상과 경험을 공유합니다
             </p>
           </div>
+          
+          {/* 사진 갤러리 */}
+          <PhotoGallery />
           
           {/* 타임라인 */}
           <div className="space-y-8">
@@ -91,6 +95,46 @@ export default function Life() {
                     </p>
                     <span className="inline-block mt-2 text-sm text-yellow-600 dark:text-yellow-400">
                       Open Source • Community • Learning
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 2022 */}
+            <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-8">
+              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+                2022년
+              </h2>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      개인 포트폴리오 웹사이트 개발
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Next.js와 Tailwind CSS를 사용하여 반응형 포트폴리오 웹사이트를 제작했습니다. 
+                      다크모드와 다국어 지원 기능을 포함하여 사용자 경험을 향상시켰습니다.
+                    </p>
+                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
+                      Next.js • TypeScript • Tailwind CSS
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      새로운 기술 스택 학습
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      React Native와 모바일 앱 개발에 대한 관심이 생겨 관련 기술들을 학습하고 있습니다. 
+                      크로스 플랫폼 개발의 장점을 경험하고 있습니다.
+                    </p>
+                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
+                      React Native • Mobile Development
                     </span>
                   </div>
                 </div>
