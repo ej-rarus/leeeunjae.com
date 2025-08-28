@@ -29,7 +29,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                 관심 분야
@@ -53,6 +53,19 @@ export default function About() {
                 <li>• 커뮤니티 기여</li>
               </ul>
             </div>
+          </div>
+          <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-8 mb-12">
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+              안녕하세요! 👋
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              저는 새로운 기술을 배우고 창의적인 솔루션을 만들어가는 것을 좋아하는 개발자입니다. 
+              사용자 경험을 중요시하며, 깔끔하고 효율적인 코드를 작성하는 것을 목표로 합니다.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              현재 웹 개발과 모바일 앱 개발에 관심을 가지고 있으며, 
+              다양한 프로젝트를 통해 지속적으로 성장하고 있습니다.
+            </p>
           </div>
         </div>
       </main>
