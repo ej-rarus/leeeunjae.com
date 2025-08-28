@@ -18,67 +18,67 @@ const photos: Photo[] = [
     id: '1', 
     title: 'Drawing 02', 
     description: '아트워크 드로잉 작품입니다', 
-    imagePath: '/images/drawing02.jpg' 
+    imagePath: '/images/gallery/drawing02.jpg' 
   },
   { 
     id: '2', 
     title: 'Terminator', 
     description: '터미네이터 테마의 아트워크입니다', 
-    imagePath: '/images/terminator.png' 
+    imagePath: '/images/gallery/terminator.png' 
   },
   { 
     id: '3', 
     title: 'Socrates Pixel', 
     description: '소크라테스를 픽셀 아트로 표현한 작품입니다', 
-    imagePath: '/images/socrates_pixel.png' 
+    imagePath: '/images/gallery/socrates_pixel.png' 
   },
   { 
     id: '4', 
     title: 'Valentine', 
     description: '발렌타인 테마의 아트워크입니다', 
-    imagePath: '/images/valentine.png' 
+    imagePath: '/images/gallery/valentine.png' 
   },
   { 
     id: '5', 
     title: '아트워크 1', 
     description: '제목 없는 아트워크 작품입니다', 
-    imagePath: '/images/제목_없는_아트워크.png' 
+    imagePath: '/images/gallery/제목_없는_아트워크.png' 
   },
   { 
     id: '6', 
     title: '아트워크 2', 
     description: '두 번째 제목 없는 아트워크입니다', 
-    imagePath: '/images/제목_없는_아트워크 (1).png' 
+    imagePath: '/images/gallery/제목_없는_아트워크 (1).png' 
   },
   { 
     id: '7', 
     title: 'Arwen', 
     description: '반지의 제왕의 아르웬을 모델로 한 아트워크입니다', 
-    imagePath: '/images/Arwen.png' 
+    imagePath: '/images/gallery/Arwen.png' 
   },
   { 
     id: '8', 
     title: '윌리웡카', 
     description: '윌리웡카 테마의 아트워크입니다', 
-    imagePath: '/images/윌리웡카.png' 
+    imagePath: '/images/gallery/윌리웡카.png' 
   },
   { 
     id: '9', 
     title: '아트워크 3', 
     description: '세 번째 제목 없는 아트워크입니다', 
-    imagePath: '/images/제목_없는_아트워크 (2).png' 
+    imagePath: '/images/gallery/제목_없는_아트워크 (2).png' 
   },
   { 
     id: '10', 
     title: 'Result 001', 
     description: '첫 번째 결과물입니다', 
-    imagePath: '/images/result-001.png' 
+    imagePath: '/images/gallery/result-001.png' 
   },
   { 
     id: '11', 
     title: 'Result 002', 
     description: '두 번째 결과물입니다', 
-    imagePath: '/images/result-002.png' 
+    imagePath: '/images/gallery/result-002.png' 
   },
 ];
 
