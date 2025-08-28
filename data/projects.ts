@@ -12,36 +12,36 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "portfolio",
-    title: "개인 포트폴리오",
-    description: "Next.js와 Tailwind CSS를 사용하여 만든 반응형 개인 포트폴리오 웹사이트입니다.",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+    id: "farmster",
+    title: "FARMSTER",
+    description: "아두이노를 사용하여 만든 종합 스마트팜 플랫폼",
+    technologies: ["React.js", "Express.js", "MySQL", "AWS", "Arduino"],
     gradientFrom: "from-blue-400",
     gradientTo: "to-purple-500",
     buttonText: "자세히 보기",
-    href: "/projects/portfolio",
+    href: "/projects/farmster",
     iconType: "portfolio"
   },
   {
-    id: "mobile-app",
-    title: "모바일 앱",
-    description: "React Native를 사용하여 개발한 크로스 플랫폼 모바일 애플리케이션입니다.",
-    technologies: ["React Native", "JavaScript"],
+    id: "pray-with-beda",
+    title: "Pray with Beda",
+    description: "배리어 프리 천주교 기도문 암송 도우미 웹앱",
+    technologies: ["React.js","TypeScript","Vite","Vercel"],
     gradientFrom: "from-green-400",
     gradientTo: "to-blue-500",
     buttonText: "자세히 보기",
-    href: "/projects/mobile-app",
+    href: "https://praywithbeda.com",
     iconType: "mobile-app"
   },
   {
-    id: "api",
-    title: "백엔드 API",
-    description: "Node.js와 Express를 사용하여 개발한 RESTful API 서버입니다.",
-    technologies: ["Node.js", "Express", "MongoDB"],
+    id: "farmbit-ui",
+    title: "Farmbit UI",
+    description: "Farmbit 스마트팜 디바이스 UI",
+    technologies: ["React.js", "TypeScript", "MongoDB", "PLC", "Websocket","NodeRed"],
     gradientFrom: "from-purple-400",
     gradientTo: "to-pink-500",
     buttonText: "자세히 보기",
-    href: "/projects/api",
+    href: "/projects/farmbit-ui",
     iconType: "api"
   }
 ];
