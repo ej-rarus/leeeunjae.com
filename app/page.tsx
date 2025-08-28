@@ -1,4 +1,5 @@
 import Nav from "@/components/layout/Nav";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,12 +15,16 @@ export default function Home() {
               개발자로서 새로운 기술을 배우고 창의적인 솔루션을 만들어가는 여정을 공유합니다.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200">
-                프로젝트 보기
-              </button>
-              <button className="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 px-8 py-3 rounded-lg font-medium transition-colors duration-200">
-                소개 더 보기
-              </button>
+              <Link href="/projects">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200">
+                  프로젝트 보기
+                </button>
+              </Link>
+              <Link href="/about">
+                <button className="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 px-8 py-3 rounded-lg font-medium transition-colors duration-200">
+                  소개 더 보기
+                </button>
+              </Link>
             </div>
           </div>
         </div>
