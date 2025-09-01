@@ -117,7 +117,7 @@ export default function FarmsterProject() {
                       src={slides[currentSlide].image} 
                       alt={slides[currentSlide].title}
                       className="w-full h-full object-contain"
-                      style={{ imageRendering: 'high-quality' }}
+
                     />
                   </div>
                 ) : (
