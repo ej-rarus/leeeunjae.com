@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next";
-
 
 export const metadata: Metadata = {
   title: "Farmster - 스마트팜 IoT 솔루션",
