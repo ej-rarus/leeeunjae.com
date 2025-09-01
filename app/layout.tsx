@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: "이은재 닷컴",
-    template: "%s | 이은재닷컴"
+    template: "%s | 이은재 닷컴"
   },
   description: "안녕하세요, 이은재입니다.",
   keywords: [
