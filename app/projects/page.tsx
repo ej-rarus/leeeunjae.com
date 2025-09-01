@@ -2,6 +2,18 @@ import Nav from "@/components/layout/Nav";
 import ProjectCard from "@/components/shared/ProjectCard";
 import { projects } from "@/data/projects";
 import { PortfolioIcon, MobileAppIcon, ApiIcon } from "@/components/shared/ProjectIcons";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "프로젝트",
+  description: "AI/ML, 스마트팜, 웹개발 등 다양한 기술 분야에서 진행한 프로젝트들을 소개합니다. React Native, Unity, Python 등을 활용한 실무 프로젝트 경험을 확인할 수 있습니다.",
+  keywords: ["이은재", "프로젝트", "AI", "머신러닝", "스마트팜", "IoT", "웹개발", "React Native", "Unity", "Python", "포트폴리오", "개발 경험"],
+  openGraph: {
+    title: "이은재 - 개발 프로젝트 포트폴리오",
+    description: "AI/ML, 스마트팜, 웹개발 등 다양한 기술 분야에서 진행한 프로젝트들을 소개합니다.",
+    url: "https://leeeunjae.com/projects",
+  },
+};
 
 const getIcon = (iconType: string) => {
   switch (iconType) {

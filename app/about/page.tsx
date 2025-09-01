@@ -1,4 +1,16 @@
 import Nav from "@/components/layout/Nav";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "소개",
+  description: "AI/ML, 스마트팜 기술, 웹개발 전문가 이은재에 대한 상세한 소개 페이지입니다. 핵심역량과 관심 분야, 목표를 확인할 수 있습니다.",
+  keywords: ["이은재", "개발자", "소개", "AI", "머신러닝", "스마트팜", "웹개발", "Python", "React", "Next.js", "핵심역량", "포트폴리오"],
+  openGraph: {
+    title: "이은재 - 개발자 소개 및 핵심역량",
+    description: "AI/ML, 스마트팜 기술, 웹개발 전문가 이은재의 상세한 소개와 핵심역량을 확인할 수 있습니다.",
+    url: "https://leeeunjae.com/about",
+  },
+};
 
 export default function About() {
   return (
