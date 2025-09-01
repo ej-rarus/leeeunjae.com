@@ -60,6 +60,9 @@ export default function Footer() {
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   🌐 GitHub: <a href="https://github.com/ej-rarus" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">github.com/ej-rarus</a>
                 </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  📸 instagram: <a href="https://www.instagram.com/ej_rarus" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">@ej_rarus</a>
+                </p>
               </div>
           </div>
         </div>
