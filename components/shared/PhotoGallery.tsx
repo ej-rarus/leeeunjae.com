@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import { FaInstagram } from 'react-icons/fa';
 
 interface Photo {
   id: string;
@@ -122,7 +123,7 @@ export default function PhotoGallery() {
     <>
       <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-8 mb-8">
         <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-          📸 사진 갤러리 ({photos.length}장)
+          Artworks ({photos.length}장)
         </h2>
         
         {/* 갤러리 컨테이너 */}
@@ -179,7 +180,15 @@ export default function PhotoGallery() {
         </div>
         
         <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
-          좌우로 스크롤하여 더 많은 사진을 확인하세요 • 총 {photos.length}장의 사진
+          <a 
+            href="https://www.instagram.com/ej_rarus" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 underline cursor-pointer transition-colors duration-200"
+          >
+            <FaInstagram className="inline-block mr-1" />instagram
+          </a>
+          에 방문해 더 많은 저의 아트워크를 만나보세요 • 총 {photos.length}장의 사진
         </p>
       </div>
 
