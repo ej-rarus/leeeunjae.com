@@ -79,14 +79,14 @@ export default function Life() {
                       인공지능과 머신러닝 분야에 도전하여 새로운 기술 영역을 개척하고 있습니다. 
                       데이터 분석과 예측 모델링에 대한 깊이 있는 학습을 진행하고 있습니다.
                     </p>
-                    <span className="inline-block mt-2 text-sm text-indigo-600 dark:text-indigo-400">
-                      AI • Machine Learning • Python • TensorFlow
-                    </span>
+                                          <span className="inline-block mt-2 text-sm text-indigo-600 dark:text-indigo-400">
+                        AI • Machine Learning • Python • TensorFlow • Data Analysis • Predictive Modeling
+                      </span>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-purple-600 rounded-full mt-2"></div>
+                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
                       팜비트 스마트팜 디바이스 UI 개발
@@ -98,23 +98,38 @@ export default function Life() {
                       href="https://farmbit.kr/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="block w-fit px-3 py-2 mt-2 mb-4 text-sm font-medium text-purple-700 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 hover:border-purple-300 dark:hover:border-purple-700 transition-all duration-200 group"
+                      className="block w-fit px-3 py-2 mt-2 mb-4 text-sm font-medium text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 hover:border-green-300 dark:hover:border-green-700 transition-all duration-200 group"
                     >
                       <div className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-green-600 dark:text-green-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
-                        <span className="underline decoration-purple-300 dark:decoration-purple-600 underline-offset-2">
+                        <span className="underline decoration-green-300 dark:decoration-green-600 underline-offset-2">
                           farmbit.kr
                         </span>
-                        <svg className="w-3 h-3 text-purple-500 dark:text-purple-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-3 h-3 text-green-500 dark:text-green-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                       </div>
                     </a>
-                    <span className="inline-block mt-2 text-sm text-purple-600 dark:text-purple-400">
-                      Open Source • Community • Leadership
+                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
+                      Smart Farm • UI Design • Frontend Development • Commercialization
                     </span>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      leeeunjae.com 리뉴얼
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Next.js와 Tailwind CSS를 사용하여 반응형 포트폴리오 웹사이트를 리뉴얼했습니다. 
+                      프레임워크 변경, 디자인 개선, 다크모드와 다국어 지원 기능을 포함하여 사용자 경험을 향상시켰습니다.
+                    </p>
+                                          <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
+                        Next.js • TypeScript • Tailwind CSS • Portfolio • Responsive Design • Dark Mode • Internationalization
+                      </span>
                   </div>
                 </div>
               </div>
@@ -127,17 +142,32 @@ export default function Life() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      개인 포트폴리오 웹사이트 개발
+                      스마트팜 종합 플랫폼 Farmster 개발
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Next.js와 Tailwind CSS를 사용하여 반응형 포트폴리오 웹사이트를 제작했습니다. 
-                      다크모드와 다국어 지원 기능을 포함하여 사용자 경험을 향상시켰습니다.
+                      스마트팜 기술을 활용한 종합 플랫폼 Farmster를 개발했습니다. 
+                      IoT 센서 데이터 수집과 분석, 원격 모니터링 시스템을 구현하여 농업의 디지털화를 도모했습니다.
                     </p>
-                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      Next.js • TypeScript • Tailwind CSS
+                    <div className="mt-2">
+                      <a 
+                        href="https://www.youtube.com/watch?v=ni_NdSsOltY" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 hover:border-green-300 dark:hover:border-green-700 transition-all duration-200 group"
+                      >
+                        <svg className="w-4 h-4 text-green-600 dark:text-green-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1M9 16v-2a2 2 0 012-2h2a2 2 0 012 2v2M12 8V6a2 2 0 00-2-2H8a2 2 0 00-2 2v2h8z" />
+                        </svg>
+                        <span className="underline decoration-green-300 dark:decoration-green-600 underline-offset-2">
+                          YouTube 데모
+                        </span>
+                      </a>
+                    </div>
+                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
+                      Smart Farm • IoT • Data Analysis • Remote Monitoring • Agriculture Technology
                     </span>
                   </div>
                 </div>
@@ -146,32 +176,50 @@ export default function Life() {
                   <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      새로운 기술 스택 학습
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      React Native와 모바일 앱 개발에 대한 관심이 생겨 관련 기술들을 학습하고 있습니다. 
-                      크로스 플랫폼 개발의 장점을 경험하고 있습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      React Native • Mobile Development
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-yellow-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
                       대신IT평생교육원 스마트팜 전문가 양성과정 교육이수
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       스마트팜 전문가 양성과정을 이수했습니다. 응용SW엔지니어링 직종으로 
                       국가직무능력표준(NCS)기반 교육을 받았습니다.
                     </p>
-                    <span className="inline-block mt-2 text-sm text-yellow-600 dark:text-yellow-400">
-                      Smart Farm • Applied Software Engineering • NCS • Professional Training
+                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
+                      Smart Farm • Applied Software Engineering • NCS • Professional Training • IoT • Agriculture Technology
                     </span>
                     <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">2024.08 ~ 2025.02</div>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-purple-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      공동연구논문 발표
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-2">
+                      2024 이은재, 김형주 "존 듀이의 경험주의 교육철학과 전인적 인공지능 교육을 위한 제언" 
+                      윤리교육연구 2024, vol., no.71, pp. 415-449 (35 pages)
+                    </p>
+                    <a 
+                      href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003047280" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="block w-fit px-3 py-2 mt-2 mb-4 text-sm font-medium text-purple-700 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 hover:border-purple-300 dark:hover:border-purple-700 transition-all duration-200 group"
+                    >
+                      <div className="flex items-center gap-2">
+                        <svg className="w-4 h-4 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        <span className="underline decoration-purple-300 dark:decoration-purple-600 underline-offset-2">
+                          KCI 바로가기
+                        </span>
+                        <svg className="w-3 h-3 text-purple-500 dark:text-purple-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
+                    <span className="inline-block mt-2 text-sm text-purple-600 dark:text-purple-400">
+                      AI Education • Philosophy • John Dewey • Ethics Education • Research Publication • Academic Writing
+                    </span>
                   </div>
                 </div>
 
@@ -215,41 +263,9 @@ export default function Life() {
                       </div>
                     </a>
                     <span className="inline-block mt-2 text-sm text-purple-600 dark:text-purple-400">
-                      SciPy Korea • Data Science • Python • Scientific Computing
+                      SciPy Korea • Data Science • Python • Scientific Computing • Community Management • Conference Organization
                     </span>
                     <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">2023.04 ~ 2024.12</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-yellow-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      웹 개발 프로젝트 참여
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      다양한 웹 개발 프로젝트에 참여하며 실무 경험을 쌓았습니다. 
-                      팀 협업과 코드 리뷰를 통해 개발 역량을 향상시켰습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-yellow-600 dark:text-yellow-400">
-                      React • Node.js • Team Collaboration
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      개발 커뮤니티 활동
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      개발자 커뮤니티에 참여하여 지식을 공유하고 새로운 기술 트렌드를 학습했습니다. 
-                      오픈소스 프로젝트에 기여하며 개발자로서의 성장을 경험했습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      Open Source • Community • Learning
-                    </span>
                   </div>
                 </div>
               </div>
@@ -262,33 +278,35 @@ export default function Life() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                  <div className="flex-shrink-0 w-3 h-3 bg-yellow-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      프론트엔드 개발 집중
+                      공동연구논문 발표
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      React와 Vue.js를 중심으로 프론트엔드 개발에 집중했습니다. 
-                      사용자 경험과 인터페이스 디자인에 대한 이해를 높였습니다.
+                    <p className="text-gray-600 dark:text-gray-300 mb-2">
+                      2022 심지원, 이은재, 김문정 "인간의 윤리로서 인공지능윤리 -인공지능윤리의 가치와 자리-" 
+                      철학∙사상∙문화 38, pp.46-64 (2022) : 46.
                     </p>
-                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      React • Vue.js • Frontend Development
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      백엔드 기술 학습
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Node.js와 Express를 학습하여 풀스택 개발 능력을 키웠습니다. 
-                      API 설계와 데이터베이스 연동에 대한 경험을 쌓았습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      Node.js • Express • Backend Development
+                    <a 
+                      href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002810155" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="block w-fit px-3 py-2 mt-2 mb-4 text-sm font-medium text-yellow-700 dark:text-yellow-400 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg hover:bg-yellow-100 dark:hover:bg-yellow-900/30 hover:border-yellow-300 dark:hover:border-yellow-700 transition-all duration-200 group"
+                    >
+                      <div className="flex items-center gap-2">
+                        <svg className="w-4 h-4 text-yellow-600 dark:text-yellow-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        <span className="underline decoration-yellow-300 dark:decoration-yellow-600 underline-offset-2">
+                          KCI 바로가기
+                        </span>
+                        <svg className="w-3 h-3 text-yellow-500 dark:text-yellow-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
+                    <span className="inline-block mt-2 text-sm text-yellow-600 dark:text-yellow-400">
+                      AI Ethics • Philosophy • Publication • Research Collaboration • Academic Writing
                     </span>
                   </div>
                 </div>
@@ -302,20 +320,6 @@ export default function Life() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      서울 시민회의 시민위원
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      서울시민회의의 시민패널로 교육분과위에서 활동하였습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      Seoul Citizens' Council • Citizen Panel • Education Policy
-                    </span>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-3 h-3 bg-yellow-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
@@ -325,7 +329,7 @@ export default function Life() {
                       2021 국립국어원 주관 ‘말뭉치 언어의 사회적 인식 조사·분류’ 연구사업에 참여하여 머신러닝에 활용 가능한 한국어 감정어 데이터 구축과 분석을 수행했습니다.
                     </p>
                     <span className="inline-block mt-2 text-sm text-yellow-600 dark:text-yellow-400">
-                      NIKL • Corpus • Machine Learning • Sentiment Data
+                      NIKL • Corpus • Machine Learning • Sentiment Data • Korean Language • Data Analysis
                     </span>
                   </div>
                 </div>
@@ -334,13 +338,56 @@ export default function Life() {
                   <div className="flex-shrink-0 w-3 h-3 bg-indigo-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      APFC·KAIEA 공동 보고서 발간
+                      APFC·KAIEA 공동 연구보고서 발간
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       2021 캐나다아시아태평양재단(APFC)·한국인공지능윤리협회(KAIEA) 공동 ‘AI Education Report for K-12 in Canada and South Korea’ 보고서 발간에 참여했습니다.
                     </p>
+                    <div className="flex flex-col sm:flex-row gap-2 mt-2">
+                      <a 
+                        href="https://www.asiapacific.ca/publication/ai-education-k-12-canada-and-south-korea" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-indigo-700 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-800 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900/30 hover:border-indigo-300 dark:hover:border-indigo-700 transition-all duration-200 group"
+                      >
+                        <svg className="w-4 h-4 text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        <span className="underline decoration-indigo-300 dark:decoration-indigo-600 underline-offset-2">
+                          asiapacific.ca
+                        </span>
+                      </a>
+                      <a 
+                        href="https://www.asiapacific.ca/sites/default/files/publication-pdf/AI%20K-12%20Education%20Report_FINAL.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        download
+                        className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-indigo-700 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-800 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900/30 hover:border-indigo-300 dark:hover:border-indigo-700 transition-all duration-200 group"
+                      >
+                        <svg className="w-4 h-4 text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        <span className="underline decoration-indigo-300 dark:decoration-indigo-600 underline-offset-2">
+                          PDF 다운로드
+                        </span>
+                      </a>
+                    </div>
                     <span className="inline-block mt-2 text-sm text-indigo-600 dark:text-indigo-400">
-                      AI Ethics • Education • Policy • K-12
+                      AI Ethics • Education • Policy • K-12 • International Collaboration • Research Report
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      서울 시민회의 시민위원
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      서울시민회의의 시민패널로 교육분과위에서 활동하였습니다.
+                    </p>
+                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
+                      Seoul Citizens' Council • Citizen Panel • Education Policy • Civic Participation • Public Policy
                     </span>
                   </div>
                 </div>
@@ -364,13 +411,13 @@ export default function Life() {
                       학부에서 쌓은 기초를 바탕으로 전문적인 지식과 연구 역량을 키우고 있습니다.
                     </p>
                     <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      Graduate School • Computer Engineering • Advanced Research • Academic Growth
+                      Graduate School • Philosophy • Western Philosophy • Advanced Research • Academic Growth
                     </span>
                     <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">2020.03 ~ 진행중</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
+                  <div className="flex-shrink-0 w-3 h-3 bg-purple-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
                       중앙대학교 HK+ 인문콘텐츠연구소 연구보조원 입사
@@ -389,40 +436,40 @@ export default function Life() {
                     <p className="text-gray-600 dark:text-gray-300 mb-2"> 
                       또 연 1회 개최되는 국제학술대회 ICAIH(International Conference on AI Humanities)의 기획 및 운영을 지원했습니다. 다양한 전공의 연구자들과의 학술교류 및 공동연구 활동을 통해 인문학 기반 인공지능 연구의 국제적 허브 구축에 기여하였습니다.
                     </p>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      AI Humanities Python • AI Ethics • Data Structures • Python
+                    <span className="inline-block mt-2 text-sm text-purple-600 dark:text-purple-400">
+                      AI Humanities • AI Ethics • Research Support • Web Development • Server Maintenance
                     </span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
+                  <div className="flex-shrink-0 w-3 h-3 bg-yellow-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
                       생활코딩 머신러닝 베타테스터
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      컴퓨터 교육 커뮤니티인 생활코딩에서 머신러닝을 학습하는 내용의 교재를 검수하고 편집하는 일을 했습니다.
+                      컴퓨터 교육 커뮤니티인 생활코딩에서 머신러닝을 학습하는 내용의 교재를 검수하고 편집하는 작업에 참여했습니다.
                     </p>
                     <a 
                       href="https://ml.yah.ac/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="block w-fit px-3 py-2 mt-2 mb-4 text-sm font-medium text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 hover:border-green-300 dark:hover:border-green-700 transition-all duration-200 group"
+                      className="block w-fit px-3 py-2 mt-2 mb-4 text-sm font-medium text-yellow-700 dark:text-yellow-400 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg hover:bg-yellow-100 dark:hover:bg-yellow-900/30 hover:border-yellow-300 dark:hover:border-yellow-700 transition-all duration-200 group"
                     >
                       <div className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-green-600 dark:text-green-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-yellow-600 dark:text-yellow-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
-                        <span className="underline decoration-green-300 dark:decoration-green-600 underline-offset-2">
+                        <span className="underline decoration-yellow-300 dark:decoration-yellow-600 underline-offset-2">
                           ml.yah.ac
                         </span>
-                        <svg className="w-3 h-3 text-green-500 dark:text-green-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-3 h-3 text-yellow-500 dark:text-yellow-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                       </div>
                     </a>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      Discrete Mathematics • Linear Algebra • Logical Thinking
+                    <span className="inline-block mt-2 text-sm text-yellow-600 dark:text-yellow-400">
+                      Machine Learning • Beta Testing • Content Review • Education
                     </span>
                     <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">2020.04 ~ 2020.08</div>
                   </div>
@@ -436,37 +483,84 @@ export default function Life() {
                 2019년 🎓
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-3 h-3 bg-pink-600 rounded-full mt-2"></div>
+                    <div>
+                      <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                        학사학위논문 집필
+                      </h3>
+                      <div className="text-gray-600 dark:text-gray-300 space-y-3">
+                        <p>
+                          철학과와 디지털이미징 전공 두 분야에서 학사학위논문을 집필하며 
+                          학문적 연구 역량을 기르고 논리적 사고와 체계적인 글쓰기 능력을 발전시켰습니다.
+                        </p>
+                        <div className="pl-4 border-l-2 border-pink-200 dark:border-pink-600">
+                          <p className="font-medium text-gray-700 dark:text-gray-200 mb-1">
+                            "인공적 도덕 행위자로서의 인공지능과 관계 기반 윤리적 판단 모델"
+                          </p>
+                          <p className="text-sm text-gray-500 dark:text-gray-400">
+                            중앙대학교 인문대학 철학과 문학사
+                          </p>
+                        </div>
+                        <div className="pl-4 border-l-2 border-pink-200 dark:border-pink-600">
+                          <p className="font-medium text-gray-700 dark:text-gray-200 mb-1">
+                            "Launchpad with Sound Visualizer: Using Arduino and Processing"
+                          </p>
+                          <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                            중앙대학교 창의ICT공과대학 융합공학부 디지털이미징 전공 공학사
+                          </p>
+                          <a 
+                            href="https://www.youtube.com/watch?v=ejOXtTidpFM" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-red-700 dark:text-red-400 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg hover:bg-red-100 dark:hover:bg-red-900/30 hover:border-red-300 dark:hover:border-red-700 transition-all duration-200 group"
+                          >
+                            <svg className="w-4 h-4 text-red-600 dark:text-red-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1M9 16v-2a2 2 0 012-2h2a2 2 0 012 2v2M12 8V6a2 2 0 00-2-2H8a2 2 0 00-2 2v2h8z" />
+                            </svg>
+                            <span className="underline decoration-red-300 dark:decoration-red-600 underline-offset-2">
+                              YouTube 데모
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                                                                <span className="inline-block mt-2 text-sm text-pink-600 dark:text-pink-400">
+                        Bachelor's Thesis • Philosophy • Digital Imaging • AI Ethics • Arduino • Processing • Creative Technology • Interactive Art
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                                      <div className="flex-shrink-0 w-3 h-3 bg-red-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      대학 입학 준비
+                      Mobile VR GAME - 'La Mer' 개발
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      컴퓨터 공학 전공을 목표로 대학 입학을 준비했습니다. 
-                      수학과 과학에 대한 기초를 다지고 논리적 사고 능력을 기르고 있습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      University Preparation • Computer Science • Mathematics
-                    </span>
+                      <p className="text-gray-600 dark:text-gray-300 mb-2">
+                        모바일 VR 게임 'La Mer'을 개발하여 가상현실 기술과 게임 개발에 대한 
+                        실무 경험을 쌓았습니다. Unity 엔진을 활용한 3D 게임 개발 능력을 기르고 있습니다.
+                      </p>
+                      <a 
+                        href="https://www.youtube.com/watch?v=6hGVZGOFdEk" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-red-700 dark:text-red-400 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg hover:bg-red-100 dark:hover:bg-red-900/30 hover:border-red-300 dark:hover:border-red-700 transition-all duration-200 group"
+                      >
+                        <svg className="w-4 h-4 text-red-600 dark:text-red-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1M9 16v-2a2 2 0 012-2h2a2 2 0 012 2v2M12 8V6a2 2 0 00-2-2H8a2 2 0 00-2 2v2h8z" />
+                        </svg>
+                        <span className="underline decoration-red-300 dark:decoration-red-600 underline-offset-2">
+                          YouTube 데모
+                        </span>
+                      </a>
+                      
+                                            <div className="mt-4">
+                        <span className="inline-block text-sm text-red-600 dark:text-red-400">
+                          VR Game Development • Unity • Mobile Development • 3D Graphics • Virtual Reality • Game Design
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      기술에 대한 관심
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      스마트폰과 컴퓨터 기술에 대한 관심이 생겨 기술 분야에 대한 
-                      기본적인 이해와 지식을 쌓기 시작했습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      Technology Interest • Smart Devices • Computer Basics
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -477,33 +571,32 @@ export default function Life() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                  <div className="flex-shrink-0 w-3 h-3 bg-orange-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      고등학교 생활
+                      WEB 교육자료 집필
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      고등학교에서 수학과 과학 과목에 집중하며 기초 학문을 다졌습니다. 
-                      논리적 사고와 문제 해결 능력을 기르고 있습니다.
+                      웹 개발의 기초인 HTML, CSS, JavaScript에 대한 체계적인 교육자료를 집필했습니다. 
+                      단계별 학습을 통해 웹 개발의 핵심 개념을 쉽게 이해할 수 있도록 구성했습니다.
                     </p>
-                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      High School • Mathematics • Science • Problem Solving
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      미래 진로 탐색
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      다양한 진로에 대한 탐색을 통해 자신의 관심사와 적성을 파악했습니다. 
-                      기술 분야에 대한 호기심이 생기기 시작했습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      Career Exploration • Self-Discovery • Technology Interest
+                    <div className="mt-2">
+                      <a 
+                        href="https://drive.google.com/drive/folders/1O1mP_GLFEuuzuaFGZ_y6Iq3n1AXeb4Wz?usp=drive_link" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-orange-700 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg hover:bg-orange-100 dark:hover:bg-orange-900/30 hover:border-orange-300 dark:hover:border-orange-700 transition-all duration-200 group"
+                      >
+                        <svg className="w-4 h-4 text-orange-600 dark:text-orange-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19z" />
+                        </svg>
+                        <span className="underline decoration-orange-300 dark:decoration-orange-600 underline-offset-2">
+                          구글 드라이브 바로가기
+                        </span>
+                      </a>
+                    </div>
+                    <span className="inline-block mt-2 text-sm text-orange-600 dark:text-orange-400">
+                      Web Development • HTML • CSS • JavaScript • Education Materials • Frontend Development • Programming Education
                     </span>
                   </div>
                 </div>
@@ -517,33 +610,32 @@ export default function Life() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                  <div className="flex-shrink-0 w-3 h-3 bg-purple-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      중학교 졸업
+                      머신 러닝 개론 교육자료 집필
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      중학교를 졸업하며 기본적인 학문의 기초를 다졌습니다. 
-                      수학과 과학에 대한 흥미를 발견하고 있습니다.
+                      머신 러닝의 기본 개념과 원리를 이해하기 쉽게 설명하는 교육자료를 집필했습니다. 
+                      초보자도 쉽게 따라할 수 있도록 단계별로 구성했습니다.
                     </p>
-                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      Middle School Graduation • Basic Education • Mathematics
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      컴퓨터 활용 능력
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      컴퓨터 수업을 통해 기본적인 컴퓨터 활용 능력을 기르고 있습니다. 
-                      워드프로세서와 스프레드시트 사용법을 학습했습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      Computer Skills • Word Processor • Spreadsheet
+                    <div className="mt-2">
+                      <a 
+                        href="https://drive.google.com/drive/folders/1I0xin9XAkqPtKbqQMAfMKBrvKZmNOo0w?usp=drive_link" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-purple-700 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 hover:border-purple-300 dark:hover:border-purple-700 transition-all duration-200 group"
+                      >
+                        <svg className="w-4 h-4 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19z" />
+                        </svg>
+                        <span className="underline decoration-purple-300 dark:decoration-purple-600 underline-offset-2">
+                          구글 드라이브 바로가기
+                        </span>
+                      </a>
+                    </div>
+                    <span className="inline-block mt-2 text-sm text-purple-600 dark:text-purple-400">
+                      Machine Learning • Education Materials • AI Fundamentals • Teaching • Curriculum Development • Educational Technology
                     </span>
                   </div>
                 </div>
@@ -584,18 +676,18 @@ export default function Life() {
                         href="https://www.notion.so/Python-10-2023-07-5a622e7bbde446d683386647be5f15f5" 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 hover:border-green-300 dark:hover:border-green-700 transition-all duration-200 group"
+                        className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-200 group"
                       >
-                        <svg className="w-4 h-4 text-green-600 dark:text-green-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
-                        <span className="underline decoration-green-300 dark:decoration-green-600 underline-offset-2">
+                        <span className="underline decoration-blue-300 dark:decoration-blue-600 underline-offset-2">
                           Python 교육 자료
                         </span>
                       </a>
                     </div>
                     <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      Python • AI • Data Analysis • Education • Curriculum Design
+                      Python • AI • Data Analysis • Education • Curriculum Design • Community Building • Free Education
                     </span>
                     <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">2016.08 ~ 진행중</div>
                   </div>
@@ -611,7 +703,7 @@ export default function Life() {
                       C언어와 Python을 통해 기본적인 프로그래밍 개념을 학습했습니다.
                     </p>
                     <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      C Language • Python • Computer Science • Programming Basics
+                      C Language • Python • Digital Imaging • Programming Basics • Creative Technology
                     </span>
                   </div>
                 </div>
@@ -627,7 +719,7 @@ export default function Life() {
                       특히 수학과 과학에 대한 관심이 생기기 시작했습니다.
                     </p>
                     <span className="inline-block mt-2 text-sm text-purple-600 dark:text-purple-400">
-                      University Entrance • Philosophy • Mathematics • Science
+                      University Transfer • Philosophy • Academic Foundation • Critical Thinking
                     </span>
                   </div>
                 </div>
