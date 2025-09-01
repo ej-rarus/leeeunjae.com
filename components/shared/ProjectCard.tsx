@@ -9,6 +9,53 @@ interface ProjectCardProps {
   href?: string;
 }
 
+// 기술별 색상 매핑
+const getTechnologyColor = (tech: string) => {
+  const techLower = tech.toLowerCase();
+  
+  // 프론트엔드 기술
+  if (techLower.includes('react') || techLower.includes('next') || techLower.includes('vue') || techLower.includes('angular') || 
+      techLower.includes('typescript') || techLower.includes('javascript') || techLower.includes('html') || techLower.includes('css') ||
+      techLower.includes('tailwind') || techLower.includes('bootstrap') || techLower.includes('sass') || techLower.includes('less')) {
+    return 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 border-blue-200 dark:border-blue-700';
+  }
+  
+  // 백엔드 기술
+  if (techLower.includes('node') || techLower.includes('express') || techLower.includes('django') || techLower.includes('spring') ||
+      techLower.includes('python') || techLower.includes('java') || techLower.includes('c#') || techLower.includes('php') ||
+      techLower.includes('go') || techLower.includes('rust') || techLower.includes('kotlin')) {
+    return 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 border-green-200 dark:border-green-700';
+  }
+  
+  // 데이터베이스
+  if (techLower.includes('mysql') || techLower.includes('postgresql') || techLower.includes('mongodb') || techLower.includes('redis') ||
+      techLower.includes('sqlite') || techLower.includes('oracle') || techLower.includes('mariadb') || techLower.includes('firebase')) {
+    return 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 border-purple-200 dark:border-purple-700';
+  }
+  
+  // 클라우드/AWS
+  if (techLower.includes('aws') || techLower.includes('cloud') || techLower.includes('docker') || techLower.includes('kubernetes') ||
+      techLower.includes('azure') || techLower.includes('gcp') || techLower.includes('heroku') || techLower.includes('vercel') ||
+      techLower.includes('netlify')) {
+    return 'bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 border-orange-200 dark:border-orange-700';
+  }
+  
+  // 모바일/앱
+  if (techLower.includes('android') || techLower.includes('ios') || techLower.includes('flutter') || techLower.includes('react native') ||
+      techLower.includes('swift') || techLower.includes('kotlin') || techLower.includes('xamarin')) {
+    return 'bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 border-pink-200 dark:border-pink-700';
+  }
+  
+  // AI/ML
+  if (techLower.includes('ai') || techLower.includes('ml') || techLower.includes('tensorflow') || techLower.includes('pytorch') ||
+      techLower.includes('scikit') || techLower.includes('opencv') || techLower.includes('numpy') || techLower.includes('pandas')) {
+    return 'bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 border-indigo-200 dark:border-indigo-700';
+  }
+  
+  // 기본 색상
+  return 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-200 dark:border-gray-600';
+};
+
 export default function ProjectCard({
   title,
   description,
@@ -42,7 +89,7 @@ export default function ProjectCard({
           {technologies.map((tech, index) => (
             <span 
               key={index}
-              className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+              className={`px-3 py-1 text-sm rounded-full border ${getTechnologyColor(tech)}`}
             >
               {tech}
             </span>

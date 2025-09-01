@@ -42,7 +42,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/skills" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  기술 스택
+                  스킬
                 </Link>
               </li>
             </ul>
