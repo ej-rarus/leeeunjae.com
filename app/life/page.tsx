@@ -15,7 +15,49 @@ export default function Life() {
               개발자로서의 일상과 경험을 공유합니다
             </p>
           </div>
-          
+          {/* 현재 관심사 */}
+          <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-8 mb-6">
+              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+                현재 관심사
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <h3 className="text-lg font-medium text-blue-900 dark:text-blue-100 mb-2">
+                    🚀 기술 발전
+                  </h3>
+                  <p className="text-blue-700 dark:text-blue-300 text-sm">
+                    새로운 프레임워크와 라이브러리를 학습하며 최신 기술 트렌드를 따라가고 있습니다.
+                  </p>
+                </div>
+                
+                <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                  <h3 className="text-lg font-medium text-green-900 dark:text-green-100 mb-2">
+                    💡 창의적 문제 해결
+                  </h3>
+                  <p className="text-green-700 dark:text-green-300 text-sm">
+                    복잡한 문제를 창의적으로 해결하는 방법을 연구하고 실습하고 있습니다.
+                  </p>
+                </div>
+                
+                <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+                  <h3 className="text-lg font-medium text-purple-900 dark:text-purple-100 mb-2">
+                    👥 커뮤니티 기여
+                  </h3>
+                  <p className="text-purple-700 dark:text-purple-300 text-sm">
+                    개발자 커뮤니티에 지식을 공유하고 다른 개발자들과 함께 성장하고 있습니다.
+                  </p>
+                </div>
+                
+                <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
+                  <h3 className="text-lg font-medium text-yellow-900 dark:text-yellow-100 mb-2">
+                    🎯 목표 설정
+                  </h3>
+                  <p className="text-yellow-700 dark:text-yellow-300 text-sm">
+                    단기 및 장기 목표를 설정하고 체계적으로 달성해나가고 있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
           {/* 사진 갤러리 */}
           <PhotoGallery />
           
@@ -191,14 +233,13 @@ export default function Life() {
                   <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      첫 웹 프로젝트 완성
+                      서울 시민회의 시민위원
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      HTML, CSS, JavaScript를 사용하여 첫 번째 웹사이트를 제작했습니다. 
-                      기본적인 웹 개발의 기초를 다지고 실습을 통해 학습했습니다.
+                      서울시민회의의 시민패널로 교육분과위에서 활동하였습니다.
                     </p>
                     <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      HTML • CSS • JavaScript • Web Development
+                      Seoul Citizens' Council • Citizen Panel • Education Policy
                     </span>
                   </div>
                 </div>
@@ -227,32 +268,35 @@ export default function Life() {
                 2020년 💻
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      컴퓨터 공학 입문
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      컴퓨터 공학 전공을 시작하며 프로그래밍의 세계에 첫 발을 내디뎠습니다. 
-                      C언어를 통해 기본적인 프로그래밍 개념을 학습했습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      C Language • Computer Science • Programming Basics
-                    </span>
-                  </div>
-                </div>
+                
                 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      수학과 논리적 사고
+                      생활코딩 머신러닝 베타테스터
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      이산수학과 선형대수학을 통해 프로그래밍에 필요한 수학적 기초를 다졌습니다. 
-                      논리적 사고와 문제 해결 능력을 기르고 있습니다.
+                      컴퓨터 교육 커뮤니티인 생활코딩에서 머신러닝을 학습하는 내용의 교재를 검수하고 편집하는 일을 했습니다.
                     </p>
+                    <a 
+                      href="https://ml.yah.ac/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="block w-fit px-3 py-2 mt-2 mb-6 text-sm font-medium text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 hover:border-green-300 dark:hover:border-green-700 transition-all duration-200 group"
+                    >
+                      <div className="flex items-center gap-2">
+                        <svg className="w-4 h-4 text-green-600 dark:text-green-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        <span className="underline decoration-green-300 dark:decoration-green-600 underline-offset-2">
+                          ml.yah.ac
+                        </span>
+                        <svg className="w-3 h-3 text-green-500 dark:text-green-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
                     <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
                       Discrete Mathematics • Linear Algebra • Logical Thinking
                     </span>
@@ -387,83 +431,40 @@ export default function Life() {
                 2016년 🌱
               </h2>
               <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      디지털이미징 복수 전공 시작
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      디지털이미징 복수 전공을 시작하며 프로그래밍의 세계에 첫 발을 내디뎠습니다. 
+                      C언어와 Python을 통해 기본적인 프로그래밍 개념을 학습했습니다.
+                    </p>
+                    <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
+                      C Language • Python • Computer Science • Programming Basics
+                    </span>
+                  </div>
+                </div>
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      중학교 2학년
+                      중앙대학교 철학과 편입학
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      중학교 2학년으로서 다양한 과목을 학습하며 기초 학문을 다지고 있습니다. 
+                      중앙대학교 철학과 3학년으로 편입학하여 본격적인 공부를 시작했습니다. 
                       특히 수학과 과학에 대한 관심이 생기기 시작했습니다.
                     </p>
                     <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
-                      Middle School • Basic Subjects • Mathematics • Science
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-green-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      디지털 시대 적응
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      스마트폰과 태블릿 등 디지털 기기에 대한 관심이 생기기 시작했습니다. 
-                      새로운 기술에 대한 호기심과 학습 의지를 키우고 있습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-green-600 dark:text-green-400">
-                      Digital Age • Smart Devices • Technology Curiosity
+                      University Entrance • Philosophy • Mathematics • Science
                     </span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* 현재 관심사 */}
-            <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                현재 관심사
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                  <h3 className="text-lg font-medium text-blue-900 dark:text-blue-100 mb-2">
-                    🚀 기술 발전
-                  </h3>
-                  <p className="text-blue-700 dark:text-blue-300 text-sm">
-                    새로운 프레임워크와 라이브러리를 학습하며 최신 기술 트렌드를 따라가고 있습니다.
-                  </p>
-                </div>
-                
-                <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                  <h3 className="text-lg font-medium text-green-900 dark:text-green-100 mb-2">
-                    💡 창의적 문제 해결
-                  </h3>
-                  <p className="text-green-700 dark:text-green-300 text-sm">
-                    복잡한 문제를 창의적으로 해결하는 방법을 연구하고 실습하고 있습니다.
-                  </p>
-                </div>
-                
-                <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-                  <h3 className="text-lg font-medium text-purple-900 dark:text-purple-100 mb-2">
-                    👥 커뮤니티 기여
-                  </h3>
-                  <p className="text-purple-700 dark:text-purple-300 text-sm">
-                    개발자 커뮤니티에 지식을 공유하고 다른 개발자들과 함께 성장하고 있습니다.
-                  </p>
-                </div>
-                
-                <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
-                  <h3 className="text-lg font-medium text-yellow-900 dark:text-yellow-100 mb-2">
-                    🎯 목표 설정
-                  </h3>
-                  <p className="text-yellow-700 dark:text-yellow-300 text-sm">
-                    단기 및 장기 목표를 설정하고 체계적으로 달성해나가고 있습니다.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </main>
