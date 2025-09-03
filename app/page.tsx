@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/shared/ProjectCard";
 import { PortfolioIcon, MobileAppIcon, ApiIcon } from "@/components/shared/ProjectIcons";
+import ScrollSnapContainer from "@/components/shared/ScrollSnapContainer";
 
 export const metadata: Metadata = {
   title: "이은재 닷컴",
@@ -33,11 +34,11 @@ export default function Home() {
   const featuredProjects = projects.slice(0, 3); // 상위 3개 프로젝트만 표시
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-800">
+    <ScrollSnapContainer>
       <Nav />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      <section className="min-h-screen pt-20 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 snap-start flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-8">
@@ -93,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="py-20 bg-white dark:bg-gray-800">
+      <section className="min-h-screen py-20 bg-white dark:bg-gray-800 snap-start flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
@@ -131,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="min-h-screen py-20 bg-gray-50 dark:bg-gray-900 snap-start flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
@@ -169,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="min-h-screen py-20 bg-gradient-to-r from-blue-600 to-purple-600 snap-start flex items-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             함께 일하고 싶으신가요?
@@ -192,6 +193,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </ScrollSnapContainer>
   );
 }
