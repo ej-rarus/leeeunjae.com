@@ -36,9 +36,19 @@ export default function ScrollSnapContainer({ children, className = "" }: Scroll
     };
 
     const handleWheel = (e: WheelEvent) => {
-      e.preventDefault();
-      
       if (isScrolling.current) return;
+
+      // 마지막 섹션에서는 스크롤 스냅 비활성화 (푸터로 스크롤 허용)
+      if (currentSection.current === totalSections - 1 && e.deltaY > 0) {
+        return; // 기본 스크롤 동작 허용
+      }
+
+      // 맨 위에서 위로 스크롤할 때는 기본 스크롤 허용
+      if (currentSection.current === 0 && e.deltaY < 0) {
+        return; // 기본 스크롤 동작 허용
+      }
+
+      e.preventDefault();
 
       if (e.deltaY > 0) {
         // 스크롤 다운
@@ -51,9 +61,23 @@ export default function ScrollSnapContainer({ children, className = "" }: Scroll
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+        const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
+        
+        // 마지막 섹션에서 아래로 키를 누를 때는 기본 스크롤 허용
+        if (currentSection.current === totalSections - 1) {
+          return; // 기본 스크롤 동작 허용
+        }
+        
         e.preventDefault();
         scrollToSection(currentSection.current + 1);
       } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+        const isAtTop = window.scrollY <= 100;
+        
+        // 맨 위에서 위로 키를 누를 때는 기본 스크롤 허용
+        if (currentSection.current === 0) {
+          return; // 기본 스크롤 동작 허용
+        }
+        
         e.preventDefault();
         scrollToSection(currentSection.current - 1);
       }
@@ -71,8 +95,7 @@ export default function ScrollSnapContainer({ children, className = "" }: Scroll
   return (
     <div 
       ref={containerRef}
-      className={`min-h-screen bg-gray-50 dark:bg-gray-800 overflow-y-scroll snap-y snap-mandatory ${className}`}
-      style={{ scrollBehavior: 'smooth' }}
+      className={`bg-gray-50 dark:bg-gray-800 ${className}`}
     >
       {children}
     </div>
