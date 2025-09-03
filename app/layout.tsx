@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "이은재 닷컴",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "이은재 닷컴",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "이은재 닷컴",
     description: "안녕하세요, 이은재입니다.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/og-image.png"],
   },
   robots: {
     index: true,
