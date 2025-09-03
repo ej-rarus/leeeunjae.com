@@ -62,11 +62,11 @@ export default function Home() {
                   프로젝트 둘러보기
                 </button>
               </Link>
-              <Link href="/about">
+              <a href="/files/이은재_포트폴리오.pdf" download="이은재_포트폴리오.pdf">
                 <button className="border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 px-8 py-4 rounded-lg font-medium transition-all duration-200 cursor-pointer transform hover:scale-105">
-                  더 알아보기
+                  포트폴리오 다운로드
                 </button>
-              </Link>
+              </a>
             </div>
             
             {/* Stats */}
