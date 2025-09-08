@@ -45,7 +45,7 @@ export default function Nav() {
     { name: translations.nav.projects, href: '/projects' },
     { name: translations.nav.skills, href: '/skills' },
     { name: translations.nav.life, href: '/life' },
-    { name: translations.nav.resources, href: 'https://drive.google.com/drive/folders/1cqMnVcdSqFzcVfTBnm7rJgqupWR2SXf2?usp=drive_link', external: true },
+    { name: translations.nav.resources, href: 'https://drive.google.com/drive/folders/1cRt3vOeAcwEBMNk4UgNkCN9k-wXL0HQd?usp=sharing', external: true },
   ];
 
   const themeOptions = [
