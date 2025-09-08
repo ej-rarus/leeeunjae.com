@@ -41,7 +41,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                 관심 분야
