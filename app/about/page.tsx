@@ -23,7 +23,7 @@ export default function About() {
               소개
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              개발자 이은재에 대해 알아보세요
+              
             </p>
           </div>
           
@@ -32,12 +32,18 @@ export default function About() {
               안녕하세요! 👋
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              저는 새로운 기술을 배우고 창의적인 솔루션을 만들어가는 것을 좋아하는 개발자입니다. 
-              사용자 경험을 중요시하며, 깔끔하고 효율적인 코드를 작성하는 것을 목표로 합니다.
+              스토리텔링 테크놀로지스트 이은재입니다.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              현재 웹 개발과 모바일 앱 개발에 관심을 가지고 있으며, 
-              다양한 프로젝트를 통해 지속적으로 성장하고 있습니다.
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              기술, 인문학, 예술을 엮어 세상에 없던 이야기를 만들고, 더 나은 도구를 상상하는 일에 관심이 많습니다.<br />
+              그래서 단순히 코드를 짜는 데 그치지 않고, 데이터를 시각화해 보이지 않던 흐름을 드러내고, 글과 영상으로 그 과정을 기록하며 나누고 있습니다.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              제가 가장 중요하게 생각하는 것은 사람에게 실제로 도움이 되는 무언가를 만드는 일입니다.<br />
+              혼자 잘하는 개발자보다는 함께 배우고 성장하는 동료이자 창작자로 남고 싶습니다.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              요즘은 웹 개발을 중심에 두고, 글쓰기와 콘텐츠 제작, 데이터 분석을 접목한 다양한 실험을 이어가고 있습니다.<br />
             </p>
           </div>
 
@@ -48,9 +54,9 @@ export default function About() {
               </h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                 <li>• 웹 개발 (React, Next.js)</li>
-                <li>• 모바일 앱 개발</li>
-                <li>• UI/UX 디자인</li>
-                <li>• 새로운 기술 학습</li>
+                <li>• 데이터 분석 & 시각화</li>
+                <li>• 글쓰기 & 스토리텔링</li>
+                <li>• 콘텐츠 크리에이션</li>
               </ul>
             </div>
 
@@ -59,10 +65,10 @@ export default function About() {
                 목표
               </h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• 사용자 친화적인 서비스 개발</li>
-                <li>• 지속적인 기술 향상</li>
+                <li>• 사람에게 도움이 되는 서비스 개발</li>
+                <li>• 지속적인 기술 탐구</li>
                 <li>• 창의적인 문제 해결</li>
-                <li>• 커뮤니티 기여</li>
+                <li>• 공동체와 함께하는 성장</li>
               </ul>
             </div>
           </div>

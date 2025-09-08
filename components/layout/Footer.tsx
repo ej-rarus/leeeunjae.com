@@ -15,7 +15,7 @@ export default function Footer() {
               이은재
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              개발자로서 새로운 기술을 배우고 창의적인 솔루션을 만들어가는 여정을 공유합니다.
+              스토리텔링 테크놀로지스트로서 새로운 기술을 배우고 창의적인 솔루션을 만들어가는 여정을 공유합니다.
             </p>
           </div>
 
@@ -45,6 +45,11 @@ export default function Footer() {
                   스킬
                 </Link>
               </li>
+              <li>
+                <Link href="/life" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  삶
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -62,6 +67,9 @@ export default function Footer() {
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   📸 instagram: <a href="https://www.instagram.com/ej_rarus" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">@ej_rarus</a>
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  📺 YouTube: <a href="https://www.youtube.com/@geuljaem" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">@geuljaem</a>
                 </p>
               </div>
           </div>

@@ -44,7 +44,7 @@ export default function Home() {
             <div className="mb-8">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
-                개발자 & AI/ML 전문가
+                AI/ML 풀스택 개발자 & 스토리텔링 테크놀로지스트
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
@@ -54,8 +54,8 @@ export default function Home() {
               </span>입니다
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-              AI/ML과 스마트팜 기술을 활용한 혁신적인 솔루션을 개발하는<br />
-              <span className="font-semibold text-gray-800 dark:text-gray-200">풀스택 개발자</span>입니다
+              AI와 웹 기술을 바탕으로, 문제를 해결하고 이야기를 설계하는<br />
+              <span className="font-semibold text-gray-800 dark:text-gray-200">스토리텔링 테크놀로지스트</span>입니다
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link href="/projects">
@@ -101,7 +101,7 @@ export default function Home() {
               주요 프로젝트
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              AI/ML과 스마트팜 기술을 활용한 혁신적인 프로젝트들을 소개합니다
+              그동안 진행한 프로젝트들을 소개합니다
             </p>
           </div>
           

@@ -24,7 +24,7 @@ export default function Life() {
               삶
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              개발자로서의 일상과 경험을 공유합니다
+              일상과 경험을 공유합니다
             </p>
           </div>
           {/* 현재 관심사 */}
@@ -35,37 +35,37 @@ export default function Life() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                   <h3 className="text-lg font-medium text-blue-900 dark:text-blue-100 mb-2">
-                    🚀 기술 발전
+                    🚀 기술과 인문학의 융합
                   </h3>
                   <p className="text-blue-700 dark:text-blue-300 text-sm">
-                    새로운 프레임워크와 라이브러리를 학습하며 최신 기술 트렌드를 따라가고 있습니다.
+                    기술과 인문학, 예술을 섞어 새로운 언어와 도구를 실험하고 있습니다.
                   </p>
                 </div>
                 
                 <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                   <h3 className="text-lg font-medium text-green-900 dark:text-green-100 mb-2">
-                    💡 창의적 문제 해결
+                    💡 데이터 분석 & 시각화
                   </h3>
                   <p className="text-green-700 dark:text-green-300 text-sm">
-                    복잡한 문제를 창의적으로 해결하는 방법을 연구하고 실습하고 있습니다.
+                    숫자 속에서 이야기를 읽어내고, 보이지 않던 흐름을 눈앞에 드러냅니다.
                   </p>
                 </div>
                 
                 <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                   <h3 className="text-lg font-medium text-purple-900 dark:text-purple-100 mb-2">
-                    👥 커뮤니티 기여
+                    🌐 세상에 도움이 되기
                   </h3>
                   <p className="text-purple-700 dark:text-purple-300 text-sm">
-                    개발자 커뮤니티에 지식을 공유하고 다른 개발자들과 함께 성장하고 있습니다.
+                  공동체 속에서 나누고 배우며, 혼자가 아닌 모두와 함께 성장하는 것을 중요하게 생각합니다.
                   </p>
                 </div>
                 
                 <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
                   <h3 className="text-lg font-medium text-yellow-900 dark:text-yellow-100 mb-2">
-                    🎯 목표 설정
+                    🖋 글쓰기 & 스토리텔링
                   </h3>
                   <p className="text-yellow-700 dark:text-yellow-300 text-sm">
-                    단기 및 장기 목표를 설정하고 체계적으로 달성해나가고 있습니다.
+                    정확하고 효율적인 글쓰기와 세상에 없던 스토리텔링을 연구하고 있습니다.
                   </p>
                 </div>
               </div>
