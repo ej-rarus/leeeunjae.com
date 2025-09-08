@@ -130,23 +130,28 @@ export default function Skills() {
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
               기타 기술
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="text-center p-4 bg-gray-50 dark:bg-gray-600 rounded-lg">
-                <div className="text-2xl mb-2">📱</div>
-                <span className="text-gray-700 dark:text-gray-300 font-medium">React Native</span>
-              </div>
-              <div className="text-center p-4 bg-gray-50 dark:bg-gray-600 rounded-lg">
-                <div className="text-2xl mb-2">🎨</div>
-                <span className="text-gray-700 dark:text-gray-300 font-medium">Figma</span>
-              </div>
-              <div className="text-center p-4 bg-gray-50 dark:bg-gray-600 rounded-lg">
-                <div className="text-2xl mb-2">🐳</div>
-                <span className="text-gray-700 dark:text-gray-300 font-medium">Docker</span>
-              </div>
-              <div className="text-center p-4 bg-gray-50 dark:bg-gray-600 rounded-lg">
-                <div className="text-2xl mb-2">☁️</div>
-                <span className="text-gray-700 dark:text-gray-300 font-medium">AWS</span>
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              {[
+                { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+                { name: "React Native", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+                { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+                { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+                { name: "AWS", icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
+                { name: "Arduino", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
+                { name: "AI/ML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+                { name: "IoT", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
+                { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+                { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+                { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" },
+                { name: "Unity", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" }
+              ].map((tech, index) => (
+                <div key={index} className="text-center group">
+                  <div className="w-16 h-16 bg-white dark:bg-gray-800 rounded-lg mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-200 shadow-md border border-gray-200 dark:border-gray-700">
+                    <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
+                  </div>
+                  <span className="text-sm text-gray-600 dark:text-gray-400 font-medium">{tech.name}</span>
+                </div>
+              ))}
             </div>
           </div>
 
