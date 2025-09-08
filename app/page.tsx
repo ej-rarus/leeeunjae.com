@@ -145,22 +145,22 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
-              { name: "React.js", color: "bg-blue-500" },
-              { name: "TypeScript", color: "bg-blue-600" },
-              { name: "Node.js", color: "bg-green-500" },
-              { name: "Python", color: "bg-yellow-500" },
-              { name: "AWS", color: "bg-orange-500" },
-              { name: "MySQL", color: "bg-blue-700" },
-              { name: "MongoDB", color: "bg-green-600" },
-              { name: "Arduino", color: "bg-teal-500" },
-              { name: "AI/ML", color: "bg-purple-500" },
-              { name: "IoT", color: "bg-indigo-500" },
-              { name: "Vercel", color: "bg-gray-800" },
-              { name: "Docker", color: "bg-blue-400" }
+              { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+              { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+              { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+              { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+              { name: "AWS", icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
+              { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+              { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+              { name: "Arduino", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
+              { name: "AI/ML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+              { name: "IoT", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
+              { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" },
+              { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" }
             ].map((tech, index) => (
               <div key={index} className="text-center group">
-                <div className={`w-16 h-16 ${tech.color} rounded-lg mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-200`}>
-                  <span className="text-white font-bold text-sm">{tech.name.split('.')[0]}</span>
+                <div className="w-16 h-16 bg-white dark:bg-gray-800 rounded-lg mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-200 shadow-md border border-gray-200 dark:border-gray-700">
+                  <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
                 </div>
                 <span className="text-sm text-gray-600 dark:text-gray-400">{tech.name}</span>
               </div>
