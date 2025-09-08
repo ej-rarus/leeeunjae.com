@@ -12,6 +12,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "diabetes-classification",
+    title: "Diabetes Classification",
+    description: "AI 모델을 활용한 당뇨병 분류 프로젝트",
+    technologies: ["Next.js", "Scikit-learn", "FastAPI", "Vercel"],
+    gradientFrom: "from-blue-400",
+    gradientTo: "to-purple-500",
+    buttonText: "개발중",
+    href: "#",
+    iconType: "portfolio"
+  },
+  {
     id: "farmster",
     title: "FARMSTER",
     description: "아두이노를 사용하여 만든 종합 스마트팜 플랫폼",
