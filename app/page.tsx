@@ -57,7 +57,7 @@ export default function Home() {
               AI와 웹 기술을 바탕으로, 문제를 해결하고 이야기를 설계하는<br />
               <span className="font-semibold text-gray-800 dark:text-gray-200">스토리텔링 테크놀로지스트</span>입니다
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 items-center">
               <Link href="/projects">
                 <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-medium transition-all duration-200 cursor-pointer transform hover:scale-105 shadow-lg h-14 flex items-center justify-center">
                   프로젝트 둘러보기
@@ -179,7 +179,7 @@ export default function Home() {
             새로운 프로젝트나 협업 기회를 기다립니다.<br />
             언제든지 연락주시면 빠르게 답변드리겠습니다.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="mailto:lpl2001@naver.com?subject=[문의]&body=안녕하세요, 은재님! 웹사이트를 보고 연락드립니다.">
               <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-medium transition-colors duration-200 transform hover:scale-105 h-14 flex items-center justify-center">
                 연락하기
