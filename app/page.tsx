@@ -8,8 +8,8 @@ import ScrollSnapContainer from "@/components/shared/ScrollSnapContainer";
 
 export const metadata: Metadata = {
   title: "이은재 닷컴",
-  description: "AI/ML, 스마트팜 기술, 웹개발 전문가 이은재의 포트폴리오 메인 페이지입니다. 개발자로서의 여정과 프로젝트를 소개합니다.",
-  keywords: ["이은재", "개발자", "포트폴리오", "AI", "머신러닝", "스마트팜", "웹개발", "프론트엔드"],
+  description: "스토리텔링 테크놀로지스트 이은재의 포트폴리오 메인 페이지입니다. AI/ML, 웹 개발자로서의 여정과 프로젝트를 소개합니다.",
+  keywords: ["이은재", "스토리텔링 테크놀로지스트", "개발자", "포트폴리오", "AI", "머신러닝", "웹개발", "프론트엔드"],
   openGraph: {
     title: "이은재 닷컴",
     description: "AI/ML, 스마트팜 기술, 웹개발 전문가 이은재의 포트폴리오 메인 페이지입니다.",
