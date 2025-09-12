@@ -7,7 +7,36 @@ interface ProjectCardProps {
   gradientTo: string;
   buttonText?: string;
   href?: string;
+  category: 'research' | 'development' | 'content';
 }
+
+// 카테고리별 색상 매핑
+const getCategoryColor = (category: string) => {
+  switch (category) {
+    case 'research':
+      return 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 border-red-200 dark:border-red-700';
+    case 'development':
+      return 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 border-blue-200 dark:border-blue-700';
+    case 'content':
+      return 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 border-green-200 dark:border-green-700';
+    default:
+      return 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-200 dark:border-gray-600';
+  }
+};
+
+// 카테고리 한글명 매핑
+const getCategoryLabel = (category: string) => {
+  switch (category) {
+    case 'research':
+      return '연구';
+    case 'development':
+      return '개발';
+    case 'content':
+      return '콘텐츠 제작';
+    default:
+      return '기타';
+  }
+};
 
 // 기술별 색상 매핑
 const getTechnologyColor = (tech: string) => {
@@ -64,7 +93,8 @@ export default function ProjectCard({
   gradientFrom,
   gradientTo,
   buttonText = "자세히 보기",
-  href = "#"
+  href = "#",
+  category
 }: ProjectCardProps) {
   return (
     <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
@@ -79,9 +109,16 @@ export default function ProjectCard({
         </div>
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-          {title}
-        </h3>
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            {title}
+          </h3>
+          <span 
+            className={`px-3 py-1 text-sm rounded-full border ${getCategoryColor(category)}`}
+          >
+            {getCategoryLabel(category)}
+          </span>
+        </div>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
           {description}
         </p>

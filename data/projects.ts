@@ -8,6 +8,7 @@ export interface Project {
   buttonText?: string;
   href?: string;
   iconType: 'portfolio' | 'mobile-app' | 'api';
+  category: 'research' | 'development' | 'content';
 }
 
 export const projects: Project[] = [
@@ -20,7 +21,8 @@ export const projects: Project[] = [
     gradientTo: "to-purple-500",
     buttonText: "개발중",
     href: "#",
-    iconType: "portfolio"
+    iconType: "portfolio",
+    category: "research"
   },
   {
     id: "farmster",
@@ -31,7 +33,8 @@ export const projects: Project[] = [
     gradientTo: "to-purple-500",
     buttonText: "자세히 보기",
     href: "/projects/farmster",
-    iconType: "portfolio"
+    iconType: "portfolio",
+    category: "development"
   },
   {
     id: "pray-with-beda",
@@ -42,7 +45,8 @@ export const projects: Project[] = [
     gradientTo: "to-blue-500",
     buttonText: "자세히 보기",
     href: "https://praywithbeda.com",
-    iconType: "mobile-app"
+    iconType: "mobile-app",
+    category: "development"
   },
   {
     id: "farmbit-ui",
@@ -53,7 +57,8 @@ export const projects: Project[] = [
     gradientTo: "to-pink-500",
     buttonText: "자세히 보기",
     href: "/projects/farmbit-ui",
-    iconType: "api"
+    iconType: "api",
+    category: "development"
   },
   {
     id: "christmas-mbti",
@@ -64,6 +69,7 @@ export const projects: Project[] = [
     gradientTo: "to-pink-500",
     buttonText: "자세히 보기",
     href: "https://www.youtube.com/watch?v=hMyr1IwnNsU",
-    iconType: "api"
+    iconType: "api",
+    category: "content"
   }
 ];
