@@ -117,6 +117,7 @@ export default function Home() {
                 gradientTo={project.gradientTo}
                 buttonText={project.buttonText}
                 href={project.href}
+                category={project.category}
               />
             ))}
           </div>
