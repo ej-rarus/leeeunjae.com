@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "kembridge",
+    title: "Kembridge",
+    description: "켐브리지 웹사이트 개발",
+    technologies: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    gradientFrom: "from-blue-400",
+    gradientTo: "to-purple-500",
+    buttonText: "자세히 보기",
+    href: "https://kembridge.co.kr",
+    iconType: "portfolio",
+    category: "development"
+  },
+  {
     id: "diabetes-classification",
     title: "Diabetes Classification",
     description: "AI 모델을 활용한 당뇨병 분류 프로젝트",
