@@ -83,5 +83,29 @@ export const projects: Project[] = [
     href: "https://www.youtube.com/watch?v=hMyr1IwnNsU",
     iconType: "api",
     category: "content"
+  },
+  {
+    id: "mermaid-interactive-guide",
+    title: "Mermaid Interactive Guide",
+    description: "Mermaid 다이어그램 작성법을 배우는 인터랙티브 가이드",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    gradientFrom: "from-cyan-400",
+    gradientTo: "to-blue-500",
+    buttonText: "자세히 보기",
+    href: "https://mermaid-interactive-guide.vercel.app/",
+    iconType: "portfolio",
+    category: "content"
+  },
+  {
+    id: "shopify-matrixify-guide",
+    title: "Shopify Matrixify Guide",
+    description: "쇼피파이 메타 오브젝트와 Matrixify를 활용한 데이터 구조 설계 및 대량 등록 가이드",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    gradientFrom: "from-orange-400",
+    gradientTo: "to-red-500",
+    buttonText: "자세히 보기",
+    href: "https://shopify-matrixify-guide.vercel.app/",
+    iconType: "portfolio",
+    category: "content"
   }
 ];
