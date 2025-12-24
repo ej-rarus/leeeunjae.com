@@ -136,12 +136,47 @@ export default function Life() {
                       leeeunjae.com 리뉴얼
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Next.js와 Tailwind CSS를 사용하여 반응형 포트폴리오 웹사이트를 리뉴얼했습니다. 
+                      Next.js와 Tailwind CSS를 사용하여 반응형 포트폴리오 웹사이트를 리뉴얼했습니다.
                       프레임워크 변경, 디자인 개선, 다크모드와 다국어 지원 기능을 포함하여 사용자 경험을 향상시켰습니다.
                     </p>
                                           <span className="inline-block mt-2 text-sm text-blue-600 dark:text-blue-400">
                         Next.js • TypeScript • Tailwind CSS • Portfolio • Responsive Design • Dark Mode • Internationalization
                       </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-orange-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      Lukuku 입사 - Project Manager
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Shopify 기반 이커머스 에이전시 Lukuku에 Project Manager로 입사하였습니다.
+                      글로벌 브랜드의 Shopify 스토어 구축 및 운영을 담당하며,
+                      AI 기반 프로젝트 관리 방법론과 Spec Owner 역할을 수행하고 있습니다.
+                    </p>
+                    <a
+                      href="https://lukuku.co/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-fit px-3 py-2 mt-2 mb-4 text-sm font-medium text-orange-700 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg hover:bg-orange-100 dark:hover:bg-orange-900/30 hover:border-orange-300 dark:hover:border-orange-700 transition-all duration-200 group"
+                    >
+                      <div className="flex items-center gap-2">
+                        <svg className="w-4 h-4 text-orange-600 dark:text-orange-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        <span className="underline decoration-orange-300 dark:decoration-orange-600 underline-offset-2">
+                          lukuku.co
+                        </span>
+                        <svg className="w-3 h-3 text-orange-500 dark:text-orange-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
+                    <span className="inline-block mt-2 text-sm text-orange-600 dark:text-orange-400">
+                      Project Manager • Shopify • E-commerce • AI • Spec Owner • Global Brand
+                    </span>
                   </div>
                 </div>
               </div>
