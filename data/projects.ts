@@ -8,10 +8,34 @@ export interface Project {
   buttonText?: string;
   href?: string;
   iconType: 'portfolio' | 'mobile-app' | 'api';
-  category: 'research' | 'development' | 'content';
+  category: 'ai-ax' | 'research' | 'development' | 'content';
 }
 
 export const projects: Project[] = [
+  {
+    id: "claude-code-guide",
+    title: "Claude Code 가이드",
+    description: "Mac에서 Claude Code를 설치하고 사용하는 방법을 안내하는 한국어 가이드 웹사이트",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    gradientFrom: "from-orange-400",
+    gradientTo: "to-amber-500",
+    buttonText: "자세히 보기",
+    href: "https://claude-code-guide-eight.vercel.app/",
+    iconType: "portfolio",
+    category: "ai-ax"
+  },
+  {
+    id: "spec-owner-kit",
+    title: "Spec Owner Kit",
+    description: "Claude가 Spec Owner 역할을 수행할 수 있게 하는 AI 기반 프로젝트 템플릿. 회의록과 요구사항을 입력하면 기능 정의서, UI 설계, WBS를 자동 생성",
+    technologies: ["Claude AI", "Markdown", "Documentation"],
+    gradientFrom: "from-violet-400",
+    gradientTo: "to-purple-500",
+    buttonText: "GitHub",
+    href: "https://github.com/ej-rarus/spec-owner-kit",
+    iconType: "api",
+    category: "ai-ax"
+  },
   {
     id: "kembridge",
     title: "Kembridge",

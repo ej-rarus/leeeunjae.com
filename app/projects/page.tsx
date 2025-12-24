@@ -39,12 +39,13 @@ export default function Projects() {
   }, {} as Record<string, typeof projects>);
 
   const categoryLabels = {
+    'ai-ax': 'AI/AX',
     research: '연구 프로젝트',
     development: '개발 프로젝트',
     content: '콘텐츠 제작'
   };
 
-  const categoryOrder = ['research', 'development', 'content'] as const;
+  const categoryOrder = ['ai-ax', 'research', 'development', 'content'] as const;
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-800">
