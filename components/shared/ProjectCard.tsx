@@ -7,12 +7,14 @@ interface ProjectCardProps {
   gradientTo: string;
   buttonText?: string;
   href?: string;
-  category: 'research' | 'development' | 'content';
+  category: 'ai-ax' | 'research' | 'development' | 'content';
 }
 
 // 카테고리별 색상 매핑
 const getCategoryColor = (category: string) => {
   switch (category) {
+    case 'ai-ax':
+      return 'bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 border-orange-200 dark:border-orange-700';
     case 'research':
       return 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 border-red-200 dark:border-red-700';
     case 'development':
@@ -27,6 +29,8 @@ const getCategoryColor = (category: string) => {
 // 카테고리 한글명 매핑
 const getCategoryLabel = (category: string) => {
   switch (category) {
+    case 'ai-ax':
+      return 'AI/AX';
     case 'research':
       return '연구';
     case 'development':
