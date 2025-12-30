@@ -20,7 +20,7 @@ export const projects: Project[] = [
     gradientFrom: "from-orange-400",
     gradientTo: "to-amber-500",
     buttonText: "자세히 보기",
-    href: "https://claude-code-guide-eight.vercel.app/",
+    href: "https://claude-code-next.vercel.app/",
     iconType: "portfolio",
     category: "ai-ax"
   },
