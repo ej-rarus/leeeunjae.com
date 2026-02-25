@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 // PPT 슬라이드 데이터 (실제 이미지로 수정)
@@ -113,11 +114,12 @@ export default function FarmsterProject() {
               <div className="mb-8">
                 {slides[currentSlide].image ? (
                   <div className="relative w-full h-[600px] bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-600">
-                    <img 
-                      src={slides[currentSlide].image} 
+                    <Image
+                      src={slides[currentSlide].image}
                       alt={slides[currentSlide].title}
-                      className="w-full h-full object-contain"
-
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
                     />
                   </div>
                 ) : (

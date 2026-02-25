@@ -1,5 +1,6 @@
 import Nav from "@/components/layout/Nav";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/shared/ProjectCard";
@@ -161,7 +162,7 @@ export default function Home() {
             ].map((tech, index) => (
               <div key={index} className="text-center group">
                 <div className="w-16 h-16 bg-white dark:bg-gray-800 rounded-lg mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-200 shadow-md border border-gray-200 dark:border-gray-700">
-                  <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
+                  <Image src={tech.icon} alt={tech.name} width={32} height={32} className="w-8 h-8" />
                 </div>
                 <span className="text-sm text-gray-600 dark:text-gray-400">{tech.name}</span>
               </div>

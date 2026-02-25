@@ -111,10 +111,10 @@ export default function PhotoGallery() {
     return (
       <Image
         src={photo.imagePath}
-        alt={photo.title}
+        alt={photo.description || photo.title}
         fill
         className="object-cover rounded-lg"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        sizes="(max-width: 768px) 50vw, 200px"
       />
     );
   };
@@ -141,34 +141,13 @@ export default function PhotoGallery() {
                     {getImageComponent(photo)}
                   </div>
                 ))}
-                
-                {/* 무한 스크롤을 위한 복제본들 */}
+
+                {/* 무한 스크롤을 위한 복제본 (1세트면 충분) */}
                 {row.map((photo) => (
                   <div
                     key={`clone-${photo.id}`}
                     onClick={() => openModal(photo)}
-                    className="relative w-48 h-32 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200 flex-shrink-0 overflow-hidden"
-                  >
-                    {getImageComponent(photo)}
-                  </div>
-                ))}
-                
-                {/* 추가 복제본들로 더 부드럽게 */}
-                {row.map((photo) => (
-                  <div
-                    key={`clone2-${photo.id}`}
-                    onClick={() => openModal(photo)}
-                    className="relative w-48 h-32 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200 flex-shrink-0 overflow-hidden"
-                  >
-                    {getImageComponent(photo)}
-                  </div>
-                ))}
-                
-                {/* 더 많은 복제본으로 완벽한 연결 */}
-                {row.map((photo) => (
-                  <div
-                    key={`clone3-${photo.id}`}
-                    onClick={() => openModal(photo)}
+                    aria-hidden="true"
                     className="relative w-48 h-32 rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200 flex-shrink-0 overflow-hidden"
                   >
                     {getImageComponent(photo)}
@@ -194,8 +173,15 @@ export default function PhotoGallery() {
 
       {/* 모달 */}
       {selectedPhoto && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="bg-white dark:bg-gray-800 rounded-lg max-w-4xl w-full max-h-full overflow-auto">
+        <div
+          className="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4"
+          onClick={closeModal}
+          onKeyDown={(e) => e.key === 'Escape' && closeModal()}
+          role="dialog"
+          aria-modal="true"
+          aria-label={selectedPhoto.title}
+        >
+          <div className="bg-white dark:bg-gray-800 rounded-lg max-w-4xl w-full max-h-full overflow-auto" onClick={(e) => e.stopPropagation()}>
             <div className="p-6">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -203,6 +189,7 @@ export default function PhotoGallery() {
                 </h3>
                 <button
                   onClick={closeModal}
+                  aria-label="닫기"
                   className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
                 >
                   ×
