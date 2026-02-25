@@ -10,6 +10,64 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "building-portfolio-with-claude-code",
+    title: "Claude Code로 포트폴리오 사이트 하루 만에 만들기",
+    description: "AI 코딩 어시스턴트 Claude Code 하나로 Next.js 포트폴리오 사이트를 기획부터 배포까지 완성한 제작기입니다.",
+    date: "2026-02-25",
+    category: "AI/개발",
+    tags: ["Claude Code", "Next.js", "포트폴리오", "AI 개발"],
+    content: `## 왜 포트폴리오 사이트를 다시 만들었나
+
+기존에 간단한 자기소개 페이지는 있었지만, 프로젝트가 늘어나면서 제대로 된 포트폴리오 사이트가 필요해졌습니다. 마침 Claude Code를 실무에서 매일 쓰고 있었기에, 이번에는 처음부터 끝까지 AI와 함께 만들어보기로 했습니다.
+
+## 기술 스택
+
+- **Next.js 15** (App Router) + TypeScript
+- **Tailwind CSS v4** — 유틸리티 퍼스트 스타일링
+- **Vercel** — 배포 및 도메인 연결
+
+별도의 CMS나 DB 없이, 데이터를 TypeScript 파일로 관리하는 정적 사이트 구조를 선택했습니다. 포트폴리오 특성상 콘텐츠 업데이트 빈도가 높지 않고, 빌드 타임에 모든 페이지가 생성되므로 성능도 뛰어납니다.
+
+## Claude Code와의 작업 흐름
+
+### 1단계: 구조 설계
+
+\`CLAUDE.md\`에 프로젝트 컨텍스트를 설정한 뒤, "포트폴리오 사이트에 필요한 페이지와 구조를 제안해줘"라고 요청했습니다. Claude가 제안한 구조를 기반으로 수정하여 최종 설계를 확정했습니다.
+
+### 2단계: 컴포넌트 구현
+
+홈, 소개, 프로젝트, 스킬, 블로그 페이지를 순서대로 만들었습니다. 특히 인상적이었던 건 "프로젝트 데이터를 TypeScript 인터페이스로 정의하고 상세 페이지를 동적 라우트로 만들어줘"라는 한 마디로 \`data/projects.ts\`부터 \`app/projects/[id]/page.tsx\`까지 한 번에 생성된 것입니다.
+
+### 3단계: 점검 및 보완
+
+사이트 완성 후 Claude Code에게 "전체적으로 점검하고 보완할 부분을 분석해줘"라고 요청했습니다. SEO, 접근성, 이미지 최적화, 성능 등 카테고리별로 개선점을 정리해줬고, 하나씩 수정해나갔습니다.
+
+주요 개선 사항:
+- \`<img>\` → Next.js \`<Image>\` 컴포넌트로 교체
+- 다크모드 hydration mismatch 해결 (blocking script 패턴)
+- scroll-snap 접근성 개선 (JS 이벤트 차단 → CSS proximity)
+- skip-to-content 링크, aria 속성 추가
+- 에러 바운더리 + 404 페이지 추가
+
+## 배운 점
+
+### AI와 협업할 때 중요한 것
+
+1. **컨텍스트가 전부다** — CLAUDE.md에 프로젝트 규칙을 명확히 쓸수록 결과물 품질이 올라갑니다.
+2. **한 번에 하나씩** — "전부 다 만들어줘"보다 "홈 페이지 먼저 만들고, 다음에 프로젝트 페이지"처럼 단계를 나누는 게 훨씬 효과적입니다.
+3. **검토는 사람이** — AI가 생성한 코드를 그대로 쓰지 않고, 반드시 동작을 확인하고 불필요한 부분을 정리해야 합니다.
+
+### 정적 사이트의 장점
+
+DB 없이 TypeScript 파일로 데이터를 관리하니 배포가 단순하고, \`generateStaticParams\`로 모든 페이지가 빌드 타임에 생성되어 로딩이 빠릅니다. 포트폴리오처럼 콘텐츠 변경이 적은 사이트에는 이 구조가 최적입니다.
+
+## 결과
+
+최종 사이트: [leeeunjae.com](https://leeeunjae.com)
+
+홈, 소개, 프로젝트(16개 + 상세 페이지), 스킬, 블로그, 이력서, 연락하기까지 총 7개 섹션의 포트폴리오가 완성되었습니다. Claude Code 덕분에 기획부터 배포까지의 시간을 크게 단축할 수 있었고, 특히 점검 단계에서 사람이 놓치기 쉬운 접근성·SEO 이슈를 빠르게 잡아낼 수 있었습니다.`,
+  },
+  {
     slug: "claude-code-with-shopify",
     title: "Claude Code로 Shopify 테마 개발하기",
     description: "AI 코딩 어시스턴트 Claude Code를 활용하여 Shopify 테마를 효율적으로 개발하는 방법과 실전 팁을 공유합니다.",
