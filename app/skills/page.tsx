@@ -4,11 +4,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "스킬",
-  description: "AI/ML, 스마트팜, 웹개발 전문가 이은재의 기술 스택과 숙련도를 확인할 수 있습니다.",
-  keywords: ["이은재", "스킬", "기술스택", "React", "Next.js", "Python", "AI", "머신러닝", "웹개발", "포트폴리오"],
+  description: "AX/AI 전문가 이은재의 기술 스택과 숙련도입니다. Next.js, TypeScript, Supabase, Shopify, Claude AI 등.",
+  keywords: ["이은재", "스킬", "기술스택", "Next.js", "TypeScript", "Supabase", "Shopify", "Claude AI", "AX"],
+  alternates: { canonical: "/skills" },
   openGraph: {
-    title: "이은재 - 개발 기술 스택 및 숙련도",
-    description: "React, Next.js, Python 등 다양한 기술 분야의 전문성과 숙련도를 확인할 수 있습니다.",
+    title: "이은재 - 기술 스택",
+    description: "Next.js, TypeScript, Supabase, Shopify, Claude AI 등 기술 스택과 숙련도를 확인할 수 있습니다.",
     url: "https://leeeunjae.com/skills",
   },
 };

@@ -3,11 +3,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "소개",
-  description: "AI/ML, 스마트팜 기술, 웹개발 전문가 이은재에 대한 상세한 소개 페이지입니다. 핵심역량과 관심 분야, 목표를 확인할 수 있습니다.",
-  keywords: ["이은재", "개발자", "소개", "AI", "머신러닝", "스마트팜", "웹개발", "Python", "React", "Next.js", "핵심역량", "포트폴리오"],
+  description: "AX/AI 전문가 이은재의 소개 페이지입니다. AI 트랜스포메이션, 웹 개발, PM 역량과 비전을 확인할 수 있습니다.",
+  keywords: ["이은재", "소개", "AX", "AI 트랜스포메이션", "PM", "웹개발", "Next.js", "Shopify", "포트폴리오"],
+  alternates: { canonical: "/about" },
   openGraph: {
-    title: "이은재 - 개발자 소개 및 핵심역량",
-    description: "AI/ML, 스마트팜 기술, 웹개발 전문가 이은재의 상세한 소개와 핵심역량을 확인할 수 있습니다.",
+    title: "이은재 - 소개",
+    description: "AX/AI 전문가 이은재의 핵심역량과 비전을 확인할 수 있습니다.",
     url: "https://leeeunjae.com/about",
   },
 };

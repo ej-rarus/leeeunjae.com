@@ -4,11 +4,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "프로젝트",
-  description: "AI/ML, 스마트팜, 웹개발 등 다양한 기술 분야에서 진행한 프로젝트들을 소개합니다. React Native, Unity, Python 등을 활용한 실무 프로젝트 경험을 확인할 수 있습니다.",
-  keywords: ["이은재", "프로젝트", "AI", "머신러닝", "스마트팜", "IoT", "웹개발", "React Native", "Unity", "Python", "포트폴리오", "개발 경험"],
+  description: "AX/AI 전문가 이은재의 프로젝트 모음입니다. AI 트랜스포메이션, 웹 개발, PM 프로젝트 등 16개 이상의 실무 경험을 확인할 수 있습니다.",
+  keywords: ["이은재", "프로젝트", "AX", "AI", "Shopify", "Next.js", "웹개발", "PM", "포트폴리오"],
+  alternates: { canonical: "/projects" },
   openGraph: {
-    title: "이은재 - 개발 프로젝트 포트폴리오",
-    description: "AI/ML, 스마트팜, 웹개발 등 다양한 기술 분야에서 진행한 프로젝트들을 소개합니다.",
+    title: "이은재 - 프로젝트 포트폴리오",
+    description: "AI 트랜스포메이션, 웹 개발, PM 등 16개 이상의 프로젝트를 확인할 수 있습니다.",
     url: "https://leeeunjae.com/projects",
   },
 };

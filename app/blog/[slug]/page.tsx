@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
+    alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: `${post.title} | 이은재 닷컴`,
       description: post.description,
@@ -119,8 +120,23 @@ export default async function BlogPost({ params }: Props) {
     notFound();
   }
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    author: { "@type": "Person", name: "이은재", url: "https://leeeunjae.com" },
+    publisher: { "@type": "Person", name: "이은재" },
+    url: `https://leeeunjae.com/blog/${post.slug}`,
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <Nav />
       <main className="pt-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

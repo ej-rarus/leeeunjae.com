@@ -4,11 +4,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "삶",
-  description: "개발자 이은재의 삶과 경험을 타임라인으로 정리한 페이지입니다. AI/ML, 스마트팜, 웹개발 등 다양한 기술 분야에서의 성장 과정을 확인할 수 있습니다.",
-  keywords: ["이은재", "개발자", "타임라인", "AI", "머신러닝", "스마트팜", "IoT", "웹개발", "Unity", "React Native", "Python", "경력", "포트폴리오"],
+  description: "AX/AI 전문가 이은재의 성장 타임라인입니다. PM, 웹 개발, AI 프로젝트 등 커리어 여정을 확인할 수 있습니다.",
+  keywords: ["이은재", "타임라인", "커리어", "AX", "AI", "PM", "웹개발", "성장", "포트폴리오"],
+  alternates: { canonical: "/life" },
   openGraph: {
-    title: "이은재 - 개발자 삶과 경험 타임라인",
-    description: "AI/ML, 스마트팜, 웹개발 등 다양한 기술 분야에서의 성장 과정과 경험을 타임라인으로 정리했습니다.",
+    title: "이은재 - 삶과 경험 타임라인",
+    description: "PM, 웹 개발, AI 프로젝트 등 커리어 여정을 타임라인으로 확인할 수 있습니다.",
     url: "https://leeeunjae.com/life",
   },
 };

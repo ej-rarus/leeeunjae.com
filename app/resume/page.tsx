@@ -6,10 +6,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "이력서",
-  description: "스토리텔링 테크놀로지스트 이은재의 이력서입니다.",
+  description: "AX/AI 전문가 · 스토리텔링 테크놀로지스트 이은재의 이력서입니다. 경력, 프로젝트, 기술 스택, 자격증을 확인할 수 있습니다.",
+  keywords: ["이은재", "이력서", "AX", "AI", "PM", "웹개발", "경력", "자격증"],
+  alternates: { canonical: "/resume" },
   openGraph: {
     title: "이은재 - 이력서",
-    description: "AI/ML, 웹개발 전문가 이은재의 이력서",
+    description: "AX/AI 전문가 이은재의 경력, 프로젝트, 기술 스택을 확인할 수 있습니다.",
     url: "https://leeeunjae.com/resume",
   },
 };

@@ -21,11 +21,10 @@ export const metadata: Metadata = {
     default: "이은재 닷컴",
     template: "%s | 이은재 닷컴"
   },
-  description: "안녕하세요, 이은재입니다.",
+  description: "AX/AI 전문가 이은재의 포트폴리오입니다. AI 트랜스포메이션, 웹 개발, PM으로 프로젝트의 처음과 끝을 함께합니다.",
   keywords: [
-    "이은재", "개발자", "포트폴리오", "AI", "머신러닝", "스마트팜", "IoT", 
-    "웹개발", "React Native", "Unity", "Python", "프론트엔드", "백엔드",
-    "데이터분석", "인공지능", "농업기술", "스마트팜 솔루션"
+    "이은재", "AX", "AI 트랜스포메이션", "개발자", "PM", "포트폴리오",
+    "Next.js", "TypeScript", "Shopify", "Supabase", "웹개발", "프론트엔드"
   ],
   authors: [{ name: "이은재", url: "https://leeeunjae.com" }],
   creator: "이은재",
@@ -44,7 +43,7 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     url: "https://leeeunjae.com",
     title: "이은재 닷컴",
-    description: "안녕하세요, 이은재입니다.",
+    description: "AX/AI 전문가 이은재의 포트폴리오입니다. AI 트랜스포메이션, 웹 개발, PM으로 프로젝트의 처음과 끝을 함께합니다.",
     siteName: "이은재 닷컴",
     images: [
       {
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "이은재 닷컴",
-    description: "안녕하세요, 이은재입니다.",
+    description: "AX/AI 전문가 이은재의 포트폴리오입니다.",
     images: ["/images/og-image.png"],
   },
   robots: {
@@ -85,6 +84,36 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||(t==='system'||!t)&&window.matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.classList.add(d?'dark':'light')}catch(e){}})()`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  name: "이은재 닷컴",
+                  url: "https://leeeunjae.com",
+                  description: "AX/AI 전문가 이은재의 포트폴리오",
+                },
+                {
+                  "@type": "Person",
+                  name: "이은재",
+                  alternateName: "Eunjae Tony Lee",
+                  url: "https://leeeunjae.com",
+                  jobTitle: "AX/AI 전문가",
+                  description: "AI 트랜스포메이션, 웹 개발, PM으로 프로젝트의 처음과 끝을 함께하는 스토리텔링 테크놀로지스트",
+                  sameAs: [
+                    "https://github.com/ej-rarus",
+                    "https://www.instagram.com/ej_rarus",
+                    "https://www.youtube.com/@geuljaem",
+                  ],
+                  knowsAbout: ["AI Transformation", "Next.js", "TypeScript", "Shopify", "Supabase", "Project Management"],
+                },
+              ],
+            }),
           }}
         />
       </head>

@@ -5,10 +5,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "블로그",
-  description: "AI, 웹개발, 프로젝트 경험 등 다양한 주제의 기술 블로그입니다.",
+  description: "AX/AI 전문가 이은재의 기술 블로그입니다. AI 활용, 웹 개발, PM 경험 등을 공유합니다.",
+  keywords: ["이은재", "블로그", "AX", "AI", "Claude Code", "웹개발", "PM", "기술 블로그"],
+  alternates: { canonical: "/blog" },
   openGraph: {
     title: "이은재 - 기술 블로그",
-    description: "AI, 웹개발, 프로젝트 경험 등 다양한 주제의 기술 블로그",
+    description: "AI 활용, 웹 개발, PM 경험 등을 공유하는 기술 블로그입니다.",
     url: "https://leeeunjae.com/blog",
   },
 };
