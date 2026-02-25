@@ -9,11 +9,11 @@ import ScrollSnapContainer from "@/components/shared/ScrollSnapContainer";
 
 export const metadata: Metadata = {
   title: "이은재 닷컴",
-  description: "스토리텔링 테크놀로지스트 이은재의 포트폴리오 메인 페이지입니다. AI/ML, 웹 개발자로서의 여정과 프로젝트를 소개합니다.",
-  keywords: ["이은재", "스토리텔링 테크놀로지스트", "개발자", "포트폴리오", "AI", "머신러닝", "웹개발", "프론트엔드"],
+  description: "AX/AI 전문가 이은재의 포트폴리오입니다. AI 트랜스포메이션, 웹 개발, PM으로 프로젝트의 처음과 끝을 함께합니다.",
+  keywords: ["이은재", "AX", "AI 트랜스포메이션", "스토리텔링 테크놀로지스트", "개발자", "PM", "포트폴리오", "AI", "웹개발"],
   openGraph: {
     title: "이은재 닷컴",
-    description: "AI/ML, 스마트팜 기술, 웹개발 전문가 이은재의 포트폴리오 메인 페이지입니다.",
+    description: "AX/AI 전문가 · 스토리텔링 테크놀로지스트 이은재의 포트폴리오입니다.",
     url: "https://leeeunjae.com",
   },
 };
@@ -45,7 +45,7 @@ export default function Home() {
             <div className="mb-8">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
-                AI/ML 풀스택 개발자 & 스토리텔링 테크놀로지스트
+                AX/AI 전문가 · 스토리텔링 테크놀로지스트
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
@@ -55,7 +55,7 @@ export default function Home() {
               </span>입니다
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-              AI와 웹 기술을 바탕으로, 문제를 해결하고 이야기를 설계하는<br />
+              AI로 업무를 혁신하고, 코드로 제품을 만들고, PM으로 프로젝트를 이끄는<br />
               <span className="font-semibold text-gray-800 dark:text-gray-200">스토리텔링 테크놀로지스트</span>입니다
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 items-center">
@@ -74,20 +74,20 @@ export default function Home() {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">4+</div>
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">16+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">완료 프로젝트</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">10+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">기술 스택</div>
+                <div className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">5+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">AI/AX 프로젝트</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-green-600 dark:text-green-400 mb-2">3+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">연차</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">PM 프로젝트</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-600 dark:text-orange-400 mb-2">100%</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">만족도</div>
+                <div className="text-3xl md:text-4xl font-bold text-orange-600 dark:text-orange-400 mb-2">10+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">기술 스택</div>
               </div>
             </div>
           </div>

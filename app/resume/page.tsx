@@ -41,7 +41,7 @@ const experience = [
 const education = [
   {
     school: "명지대학교",
-    major: "문예창작학과 / 컴퓨터공학과 (복수전공)",
+    major: "철학과 / 컴퓨터공학과 (복수전공)",
     period: "2012 ~ 2020",
   },
 ];
