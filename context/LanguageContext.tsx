@@ -11,6 +11,7 @@ interface Translations {
     about: string;
     projects: string;
     skills: string;
+    blog: string;
     life: string;
     resources: string;
   };
@@ -27,6 +28,7 @@ const translations: Record<Language, Translations> = {
       about: '소개',
       projects: '프로젝트',
       skills: '스킬',
+      blog: '블로그',
       life: '삶',
       resources: '자료실',
     },
@@ -40,6 +42,7 @@ const translations: Record<Language, Translations> = {
       about: 'About',
       projects: 'Projects',
       skills: 'Skills',
+      blog: 'Blog',
       life: 'Life',
       resources: 'Resources',
     },

@@ -44,6 +44,7 @@ export default function Nav() {
     { name: translations.nav.about, href: '/about' },
     { name: translations.nav.projects, href: '/projects' },
     { name: translations.nav.skills, href: '/skills' },
+    { name: translations.nav.blog, href: '/blog' },
     { name: translations.nav.life, href: '/life' },
     { name: translations.nav.resources, href: 'https://drive.google.com/drive/folders/1cRt3vOeAcwEBMNk4UgNkCN9k-wXL0HQd?usp=sharing', external: true },
   ];

@@ -182,11 +182,11 @@ export default function Home() {
             언제든지 연락주시면 빠르게 답변드리겠습니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="mailto:lpl2001@naver.com?subject=[문의]&body=안녕하세요, 은재님! 웹사이트를 보고 연락드립니다.">
+            <Link href="/contact">
               <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-medium transition-colors duration-200 transform hover:scale-105 h-14 flex items-center justify-center">
                 연락하기
               </button>
-            </a>
+            </Link>
             <a href="/files/이은재_포트폴리오.pdf" download="이은재_포트폴리오.pdf">
               <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 h-14 flex items-center justify-center">
                 포트폴리오 다운로드
