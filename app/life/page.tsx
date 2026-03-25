@@ -86,6 +86,58 @@ export default function Life() {
                   <div className="flex-shrink-0 w-3 h-3 bg-teal-600 rounded-full mt-2"></div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      The Moved Mover Studio 시작
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      게임과 출판을 아우르는 1인 크리에이티브 스튜디오 &apos;The Moved Mover Studio&apos;를 시작했습니다.
+                      첫 프로젝트로 Phaser 기반 로그라이크 게임 MutaRift를 개발하고,
+                      스튜디오 공식 웹사이트를 구축하고 있습니다.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mt-2 mb-4">
+                      <a
+                        href="https://themovedmover.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-fit px-3 py-2 text-sm font-medium text-teal-700 dark:text-teal-400 bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:border-teal-300 dark:hover:border-teal-700 transition-all duration-200 group"
+                      >
+                        <div className="flex items-center gap-2">
+                          <svg className="w-4 h-4 text-teal-600 dark:text-teal-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                          <span className="underline decoration-teal-300 dark:decoration-teal-600 underline-offset-2">
+                            themovedmover.com
+                          </span>
+                          <svg className="w-3 h-3 text-teal-500 dark:text-teal-400 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <span className="inline-block mt-2 text-sm text-teal-600 dark:text-teal-400">
+                      인디 스튜디오 • 게임 개발 • Phaser • Next.js
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-teal-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      Lukuku P1팀 팀장
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Shopify 에이전시 Lukuku에서 P1팀 팀장을 맡게 되었습니다.
+                      PM, 프론트엔드, 백엔드 개발자로 구성된 팀을 이끌며
+                      글로벌 브랜드의 Shopify 프로젝트 개발과 운영을 총괄하고 있습니다.
+                    </p>
+                    <span className="inline-block mt-2 text-sm text-teal-600 dark:text-teal-400">
+                      팀 리드 • Shopify • 프로젝트 관리
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-teal-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
                       치후(CHIHOO) 웹사이트 & 대시보드 개발
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -133,38 +185,6 @@ export default function Life() {
                     </div>
                     <span className="inline-block mt-2 text-sm text-teal-600 dark:text-teal-400">
                       Next.js • Supabase • TypeScript • Tailwind CSS • Prisma • Full-stack • Accessibility 100/100
-                    </span>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-teal-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      The Moved Mover Studio 시작
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      게임과 출판을 아우르는 1인 크리에이티브 스튜디오 &apos;The Moved Mover Studio&apos;를 시작했습니다.
-                      첫 프로젝트로 Phaser 기반 로그라이크 게임 MutaRift를 개발하고,
-                      스튜디오 공식 웹사이트를 구축하고 있습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-teal-600 dark:text-teal-400">
-                      인디 스튜디오 • 게임 개발 • Phaser • Next.js
-                    </span>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-3 h-3 bg-teal-600 rounded-full mt-2"></div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                      Lukuku P1팀 팀장
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Shopify 에이전시 Lukuku에서 P1팀 팀장을 맡게 되었습니다.
-                      PM, 프론트엔드, 백엔드 개발자로 구성된 팀을 이끌며
-                      글로벌 브랜드의 Shopify 프로젝트 개발과 운영을 총괄하고 있습니다.
-                    </p>
-                    <span className="inline-block mt-2 text-sm text-teal-600 dark:text-teal-400">
-                      팀 리드 • Shopify • 프로젝트 관리
                     </span>
                   </div>
                 </div>
