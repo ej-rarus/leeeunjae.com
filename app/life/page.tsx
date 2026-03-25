@@ -136,6 +136,38 @@ export default function Life() {
                     </span>
                   </div>
                 </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-teal-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      The Moved Mover Studio 시작
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      게임과 출판을 아우르는 1인 크리에이티브 스튜디오 &apos;The Moved Mover Studio&apos;를 시작했습니다.
+                      첫 프로젝트로 Phaser 기반 로그라이크 게임 MutaRift를 개발하고,
+                      스튜디오 공식 웹사이트를 구축하고 있습니다.
+                    </p>
+                    <span className="inline-block mt-2 text-sm text-teal-600 dark:text-teal-400">
+                      인디 스튜디오 • 게임 개발 • Phaser • Next.js
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-3 h-3 bg-teal-600 rounded-full mt-2"></div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                      Lukuku P1팀 팀장
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Shopify 에이전시 Lukuku에서 P1팀 팀장을 맡게 되었습니다.
+                      PM, 프론트엔드, 백엔드 개발자로 구성된 팀을 이끌며
+                      글로벌 브랜드의 Shopify 프로젝트 개발과 운영을 총괄하고 있습니다.
+                    </p>
+                    <span className="inline-block mt-2 text-sm text-teal-600 dark:text-teal-400">
+                      팀 리드 • Shopify • 프로젝트 관리
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
 
