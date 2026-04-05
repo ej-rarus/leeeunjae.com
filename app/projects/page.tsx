@@ -141,7 +141,7 @@ function ProjectGridCard({
     <div className={`${colSpan}`}>
       {/* Image / Gradient block */}
       <Link href={project.detail ? `/projects/${project.id}` : (project.href || '#')} className="block group">
-        <div className={`relative ${aspect} overflow-hidden rounded-2xl bg-gray-200 dark:bg-gray-800`}>
+        <div className={`relative ${aspect} overflow-hidden rounded-2xl bg-white dark:bg-gray-800`}>
           {project.thumbnail ? (
             <Image
               src={project.thumbnail}
