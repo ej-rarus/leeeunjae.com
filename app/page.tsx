@@ -119,6 +119,7 @@ export default function Home() {
                 buttonText={project.buttonText}
                 href={project.href}
                 category={project.category}
+                thumbnail={project.thumbnail}
               />
             ))}
           </div>
