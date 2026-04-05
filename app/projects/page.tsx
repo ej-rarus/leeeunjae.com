@@ -149,6 +149,8 @@ function ProjectGridCard({
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 66vw"
+              priority={index < 4}
+              loading={index < 4 ? undefined : "lazy"}
             />
           ) : (
             <div
