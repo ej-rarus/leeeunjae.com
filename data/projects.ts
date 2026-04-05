@@ -270,14 +270,26 @@ export const projects: Project[] = [
   {
     id: "farmster",
     title: "FARMSTER",
-    description: "아두이노를 사용하여 만든 종합 스마트팜 플랫폼",
+    description: "아두이노 기반 종합 스마트팜 플랫폼. IoT 센서 데이터 수집·분석, 원격 모니터링.",
     technologies: ["React.js", "Express.js", "MySQL", "AWS", "Arduino"],
     gradientFrom: "from-blue-400",
     gradientTo: "to-purple-500",
-    buttonText: "자세히 보기",
-    href: "/projects/farmster",
     iconType: "portfolio",
-    category: "development"
+    category: "development",
+    thumbnail: "/images/portfolio/screenshot-farmster.png",
+    detail: {
+      problem: "스마트팜 환경의 온도, 습도, 조도 등 센서 데이터를 실시간으로 수집하고 원격 모니터링할 수 있는 통합 플랫폼 필요.",
+      solution: "Arduino로 센서 데이터를 수집하고, Express.js 서버를 통해 MySQL에 저장, React 대시보드로 시각화하는 풀스택 플랫폼 구축.",
+      features: [
+        "Arduino IoT 센서 데이터 실시간 수집 (온도, 습도, 조도, 토양수분)",
+        "Express.js + MySQL 백엔드 데이터 저장·관리",
+        "React 대시보드 — 실시간 모니터링, 데이터 시각화",
+        "AWS 배포 — 원격 접속 가능한 모니터링 시스템",
+      ],
+      role: "기획 · 풀스택 개발 (1인 전담)",
+      duration: "2024",
+      liveUrl: "https://www.youtube.com/watch?v=ni_NdSsOltY",
+    },
   },
   {
     id: "pray-with-beda",
