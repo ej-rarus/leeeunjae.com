@@ -428,7 +428,7 @@ export const projects: Project[] = [
     gradientTo: "to-emerald-700",
     iconType: "api",
     category: "content",
-    thumbnail: "/images/portfolio/screenshot-magi.png",
+    thumbnail: "/images/portfolio/screenshot-magi.webp",
     detail: {
       problem: "에반게리온 MAGI 시스템의 시각적 인터페이스를 웹에서 체험할 수 있는 프로젝트가 없었습니다.",
       solution: "HTML/CSS/JavaScript만으로 MAGI 슈퍼컴퓨터의 UI를 인터랙티브하게 재현했습니다.",
