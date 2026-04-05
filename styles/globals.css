@@ -8,14 +8,14 @@ html {
 }
 
 @theme {
-  --color-background: #ffffff;
-  --color-foreground: #171717;
-  --font-sans: var(--font-geist-sans, Arial, sans-serif);
-  --font-mono: var(--font-geist-mono, 'Courier New', monospace);
+  --color-background: #f9f9ff;
+  --color-foreground: #151c27;
+  --font-sans: 'Pretendard', 'Inter', var(--font-geist-sans, Arial, sans-serif);
+  --font-mono: 'JetBrains Mono', var(--font-geist-mono, 'Courier New', monospace);
 }
 
 @theme dark {
-  --color-background: #0f0f0f;
+  --color-background: #0e0e0e;
   --color-foreground: #fafafa;
 }
 
@@ -26,23 +26,52 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Font classes */
+.font-headline {
+  font-family: 'Space Grotesk', 'Manrope', 'Pretendard', sans-serif;
+}
+
+.font-body {
+  font-family: 'Pretendard', 'Inter', sans-serif;
+}
+
+.font-label {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Giant editorial typography */
+.text-editorial {
+  font-size: clamp(3rem, 12vw, 10rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.text-editorial-sm {
+  font-size: clamp(2rem, 8vw, 5rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+
+/* Glass navigation */
+.glass-nav {
+  background: rgba(249, 249, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.dark .glass-nav {
+  background: rgba(14, 14, 14, 0.7);
+}
+
 /* Marquee 애니메이션 */
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes marquee-reverse {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 
 .animate-marquee {
@@ -53,9 +82,34 @@ body {
   animation: marquee-reverse 30s linear infinite;
 }
 
+/* Skill progress animation */
+@keyframes skill-progress {
+  from { width: 0; }
+}
+
+.animate-skill-progress {
+  animation: skill-progress 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Hide scrollbar for horizontal scroll */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
-  .animate-marquee-reverse {
+  .animate-marquee-reverse,
+  .animate-skill-progress {
     animation: none;
   }
+}
+
+/* Print styles */
+@media print {
+  .no-print { display: none !important; }
+  body { background: white !important; color: black !important; }
 }
