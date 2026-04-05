@@ -10,12 +10,6 @@ const categoryMeta: Record<string, { icon: string; color: string }> = {
   devops: { icon: 'ops', color: 'text-orange-600 dark:text-orange-400' },
 };
 
-function parsePercent(item: string): { name: string; percent: number } {
-  const match = item.match(/^(.+?)\s*—\s*(\d+)%$/);
-  if (!match) return { name: item, percent: 0 };
-  return { name: match[1], percent: parseInt(match[2], 10) };
-}
-
 export default function Skills() {
   const { t } = useLanguage();
   const categories = t.skills.categories;
@@ -57,28 +51,15 @@ export default function Skills() {
                     {cat.title}
                   </h3>
 
-                  <div className="space-y-4">
-                    {cat.items.map((item) => {
-                      const { name, percent } = parsePercent(item);
-                      return (
-                        <div key={name}>
-                          <div className="flex justify-between items-center mb-1.5">
-                            <span className="text-sm text-neutral-700 dark:text-neutral-300 group-hover:text-white/90 transition-colors">
-                              {name}
-                            </span>
-                            <span className="font-mono text-xs text-neutral-500 dark:text-neutral-400 group-hover:text-white/70 transition-colors">
-                              {percent}%
-                            </span>
-                          </div>
-                          <div className="w-full h-1.5 bg-neutral-200 dark:bg-neutral-700 rounded-full group-hover:bg-white/20 transition-colors">
-                            <div
-                              className="h-1.5 rounded-full bg-blue-600 group-hover:bg-white transition-colors"
-                              style={{ width: `${percent}%` }}
-                            />
-                          </div>
-                        </div>
-                      );
-                    })}
+                  <div className="flex flex-wrap gap-2">
+                    {cat.items.map((item) => (
+                      <span
+                        key={item}
+                        className="px-3 py-1.5 text-sm font-medium bg-neutral-200/70 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded-full group-hover:bg-white/20 group-hover:text-white transition-colors"
+                      >
+                        {item}
+                      </span>
+                    ))}
                   </div>
                 </div>
               );
