@@ -138,9 +138,9 @@ function ProjectGridCard({
   const num = String(index + 1).padStart(2, '0');
 
   return (
-    <div className={`${colSpan} group`}>
+    <div className={`${colSpan}`}>
       {/* Image / Gradient block */}
-      <Link href={project.detail ? `/projects/${project.id}` : (project.href || '#')} className="block">
+      <Link href={project.detail ? `/projects/${project.id}` : (project.href || '#')} className="block group">
         <div className={`relative ${aspect} overflow-hidden rounded-2xl bg-gray-200 dark:bg-gray-800`}>
           {project.thumbnail ? (
             <Image
