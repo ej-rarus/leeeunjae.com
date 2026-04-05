@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -8,6 +10,7 @@ interface ProjectCardProps {
   buttonText?: string;
   href?: string;
   category: 'ai-ax' | 'research' | 'development' | 'content';
+  thumbnail?: string;
 }
 
 // 카테고리별 색상 매핑
@@ -98,19 +101,30 @@ export default function ProjectCard({
   gradientTo,
   buttonText = "자세히 보기",
   href = "#",
-  category
+  category,
+  thumbnail
 }: ProjectCardProps) {
   return (
     <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
-      <div 
-        className={`h-48 bg-gradient-to-br ${gradientFrom} ${gradientTo} flex items-center justify-center relative overflow-hidden`}
+      <div
+        className={`h-48 ${thumbnail ? '' : `bg-gradient-to-br ${gradientFrom} ${gradientTo}`} flex items-center justify-center relative overflow-hidden`}
       >
-        <div className="text-center">
-          <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
-            {icon}
+        {thumbnail ? (
+          <Image
+            src={thumbnail}
+            alt={title}
+            fill
+            className="object-cover object-top"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        ) : (
+          <div className="text-center">
+            <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+              {icon}
+            </div>
+            <span className="text-white text-2xl font-bold">{title}</span>
           </div>
-          <span className="text-white text-2xl font-bold">{title}</span>
-        </div>
+        )}
       </div>
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">

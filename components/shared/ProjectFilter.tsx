@@ -115,6 +115,7 @@ export default function ProjectFilter() {
             buttonText={project.buttonText}
             href={project.href}
             category={project.category}
+            thumbnail={project.thumbnail}
           />
         ))}
       </div>

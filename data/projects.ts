@@ -20,6 +20,7 @@ export interface Project {
   href?: string;
   iconType: 'portfolio' | 'mobile-app' | 'api';
   category: 'ai-ax' | 'research' | 'development' | 'content';
+  thumbnail?: string;
   detail?: ProjectDetail;
 }
 
@@ -35,6 +36,7 @@ export const projects: Project[] = [
     href: "/projects/claude-code-guide",
     iconType: "portfolio",
     category: "ai-ax",
+    thumbnail: "/projects/claude-code-guide.jpg",
     detail: {
       problem: "Claude Code는 강력한 CLI 도구이지만, 한국어 가이드가 부족하여 비개발자가 접근하기 어려웠습니다.",
       solution: "설치부터 고급 기능까지 단계별로 안내하는 32페이지 분량의 한국어 가이드 웹사이트를 제작했습니다.",
@@ -87,6 +89,7 @@ export const projects: Project[] = [
     href: "/projects/ejaxi",
     iconType: "portfolio",
     category: "ai-ax",
+    thumbnail: "/projects/ejaxi.jpg",
     detail: {
       problem: "AI 도구가 빠르게 발전하고 있지만, 비개발자가 실무에 바로 적용하기에는 진입 장벽이 높았습니다.",
       solution: "AI 도구 활용법과 업무 자동화 방법을 단계별로 안내하는 가이드 웹사이트를 제작했습니다.",
@@ -113,6 +116,7 @@ export const projects: Project[] = [
     href: "/projects/lukuku-docs-template",
     iconType: "api",
     category: "ai-ax",
+    thumbnail: "/projects/lukuku-docs-template.jpg",
     detail: {
       problem: "프로젝트마다 기능정의서, 회의록, 가이드 등 문서를 관리할 통합 플랫폼이 필요했지만, 기존 솔루션은 과하거나 커스터마이징이 어려웠습니다.",
       solution: "Stripe 문서 사이트에서 영감을 받아, 프로젝트별로 독립 배포 가능한 문서 포털 템플릿을 만들었습니다.",
@@ -141,6 +145,7 @@ export const projects: Project[] = [
     href: "/projects/kembridge",
     iconType: "portfolio",
     category: "development",
+    thumbnail: "/projects/kembridge.jpg",
     detail: {
       problem: "켐브리지 기업은 온라인 존재감이 부족하여 브랜드 인지도와 고객 접근성에 한계가 있었습니다.",
       solution: "모던 웹 기술을 활용한 반응형 기업 웹사이트를 구축하여 브랜드 이미지를 강화하고 고객 접점을 확대했습니다.",
@@ -190,6 +195,7 @@ export const projects: Project[] = [
     href: "/projects/pray-with-beda",
     iconType: "mobile-app",
     category: "development",
+    thumbnail: "/projects/pray-with-beda.jpg",
     detail: {
       problem: "시각장애인 등 접근성이 필요한 신자들이 기도문을 암송하는 데 어려움이 있었습니다.",
       solution: "웹 접근성(WCAG)을 준수한 기도문 암송 도우미 PWA를 개발했습니다.",
@@ -265,6 +271,7 @@ export const projects: Project[] = [
     href: "/projects/mermaid-interactive-guide",
     iconType: "portfolio",
     category: "content",
+    thumbnail: "/projects/mermaid-interactive-guide.jpg",
     detail: {
       problem: "Mermaid.js 공식 문서가 영어로만 제공되고, 실습 환경이 분리되어 학습 효율이 낮았습니다.",
       solution: "코드 입력과 동시에 다이어그램이 렌더링되는 인터랙티브 학습 가이드를 한국어로 제작했습니다.",
@@ -281,27 +288,29 @@ export const projects: Project[] = [
   },
   {
     id: "the-moved-mover",
-    title: "움직인 자 (The Moved Mover)",
-    description: "온라인 출판 플랫폼 — 독립 출판물의 뉴스레터 구독과 콘텐츠 발행을 위한 웹사이트",
-    technologies: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Prisma", "Vercel"],
+    title: "The Moved Mover Studio",
+    description: "게임과 글을 통해 사람들을 움직이는 스튜디오 — 인디 게임 개발, 독립 출판, 뉴스레터 구독을 위한 스튜디오 웹사이트",
+    technologies: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Resend", "Vercel"],
     gradientFrom: "from-stone-500",
     gradientTo: "to-amber-600",
     buttonText: "자세히 보기",
     href: "/projects/the-moved-mover",
     iconType: "portfolio",
     category: "development",
+    thumbnail: "/projects/the-moved-mover.jpg",
     detail: {
-      problem: "독립 출판물의 온라인 발행 및 구독 관리를 위한 전용 플랫폼이 필요했습니다.",
-      solution: "Supabase 인증과 Prisma ORM을 활용한 뉴스레터 구독·발행 플랫폼을 구축했습니다.",
+      problem: "인디 게임과 독립 출판을 아우르는 크리에이티브 스튜디오의 온라인 존재감이 필요했습니다.",
+      solution: "게임, 출판, 데브로그, 뉴스레터 구독을 통합한 스튜디오 웹사이트를 구축했습니다.",
       features: [
-        "뉴스레터 구독 및 발행 시스템",
-        "Supabase 기반 사용자 인증",
-        "Prisma ORM을 통한 데이터 관리",
-        "반응형 독서 경험 UI",
+        "KO/EN 다국어 전환 지원",
+        "뉴스레터 구독 시스템 (Resend 연동)",
+        "데브로그 발행 및 관리 (Admin)",
+        "게임 소개 및 프레스킷 페이지",
+        "반응형 디자인 + 다크 테마",
       ],
       role: "기획, 디자인, 풀스택 개발",
-      duration: "2025.08",
-      liveUrl: "https://the-moved-mover.vercel.app",
+      duration: "2025.08 ~ 진행중",
+      liveUrl: "https://themovedmover.com",
       githubUrl: "https://github.com/ej-rarus/the-moved-mover-web",
     },
   },
