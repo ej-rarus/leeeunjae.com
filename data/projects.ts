@@ -154,10 +154,9 @@ export const projects: Project[] = [
     technologies: ["Claude AI", "Markdown", "Documentation"],
     gradientFrom: "from-violet-400",
     gradientTo: "to-purple-500",
-    buttonText: "자세히 보기",
-    href: "/projects/spec-owner-kit",
     iconType: "api",
     category: "ai-ax",
+    thumbnail: "/images/portfolio/screenshot-spec-owner.png",
     detail: {
       problem: "Shopify 프로젝트 PM 업무에서 회의록 → 기능정의서 → 화면정의서 → WBS 변환 과정이 반복적이고 시간 소모적이었습니다.",
       solution: "Claude AI에게 Spec Owner 역할을 부여하는 CLAUDE.md 기반 템플릿을 설계하여, 회의록 입력만으로 프로젝트 산출물을 자동 생성하도록 했습니다.",
@@ -262,10 +261,9 @@ export const projects: Project[] = [
     technologies: ["Next.js", "Scikit-learn", "FastAPI", "Vercel"],
     gradientFrom: "from-blue-400",
     gradientTo: "to-purple-500",
-    buttonText: "개발중",
-    href: "#",
     iconType: "portfolio",
-    category: "research"
+    category: "research",
+    thumbnail: "/images/portfolio/screenshot-diabetes.png",
   },
   {
     id: "farmster",
@@ -450,10 +448,9 @@ export const projects: Project[] = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     gradientFrom: "from-orange-400",
     gradientTo: "to-red-500",
-    buttonText: "자세히 보기",
-    href: "/projects/shopify-matrixify-guide",
     iconType: "portfolio",
     category: "content",
+    thumbnail: "/images/portfolio/screenshot-matrixify.png",
     detail: {
       problem: "Shopify Metaobject와 Matrixify를 활용한 대량 데이터 등록에 대한 한국어 가이드가 전무했습니다.",
       solution: "실무에서 검증된 데이터 구조 설계 방법과 Matrixify 활용법을 단계별 가이드로 정리했습니다.",
