@@ -147,7 +147,7 @@ function ProjectGridCard({
               src={project.thumbnail}
               alt={project.title}
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 66vw"
             />
           ) : (
@@ -157,14 +157,11 @@ function ProjectGridCard({
           )}
 
           {/* Hover overlay */}
-          <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/80 transition-colors duration-300 flex items-center justify-center">
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-6">
+          <div className="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
+            <div className="text-center px-6">
               <p className="text-white text-xl font-bold mb-2">{project.title}</p>
               <span className="inline-flex items-center text-white/90 text-sm font-medium">
-                {t.common.viewProject}
-                <svg className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
+                {t.common.viewProject} →
               </span>
             </div>
           </div>
