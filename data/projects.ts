@@ -79,6 +79,9 @@ export const projects: Project[] = [
       ],
       role: "PM · 프로젝트 총괄 리드",
       duration: "2025.12 ~ 진행 중",
+      screenshots: [
+        "/images/portfolio/screenshot-matinkim.png",
+      ],
     },
   },
   {
@@ -254,6 +257,9 @@ export const projects: Project[] = [
       role: "기획, AI 프롬프트 설계, 템플릿 개발",
       duration: "2026.01 ~ 진행중",
       githubUrl: "https://github.com/ej-rarus/spec-owner-kit",
+      screenshots: [
+        "/images/portfolio/screenshot-spec-owner.png",
+      ],
     },
   },
   {
@@ -337,6 +343,9 @@ export const projects: Project[] = [
       role: "기획 · 풀스택 개발 (1인 전담)",
       duration: "2024",
       videoUrl: "https://www.youtube.com/watch?v=ni_NdSsOltY",
+      screenshots: [
+        "/images/portfolio/screenshot-farmster.png",
+      ],
     },
   },
   {
@@ -391,6 +400,9 @@ export const projects: Project[] = [
       ],
       role: "프론트엔드 개발, 시스템 연동",
       duration: "2025.06 ~ 2025.10",
+      screenshots: [
+        "/images/portfolio/screenshot-farmbit.png",
+      ],
     },
   },
   {
@@ -415,6 +427,9 @@ export const projects: Project[] = [
       role: "기획, 디자인, 풀스택 개발",
       duration: "2023.12",
       videoUrl: "https://www.youtube.com/watch?v=hMyr1IwnNsU",
+      screenshots: [
+        "/images/portfolio/screenshot-christmas-mbti.png",
+      ],
     },
   },
   {
@@ -470,6 +485,9 @@ export const projects: Project[] = [
       role: "기획, 디자인, 프론트엔드 개발",
       duration: "2024.03",
       githubUrl: "https://github.com/ej-rarus/MAGI",
+      screenshots: [
+        "/images/portfolio/screenshot-magi.webp",
+      ],
     },
   },
 ];
