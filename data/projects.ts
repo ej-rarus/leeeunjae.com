@@ -27,6 +27,32 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "marithe-taiwan",
+    title: "MARITHÉ FRANÇOIS GIRBAUD 대만·홍콩·마카오 진출",
+    description: "프랑스 컨템포러리 브랜드 MARITHÉ의 대만·홍콩·마카오 진출을 PM으로 리드. 본사 IP와 현지 운영 체계 정렬, 다국가 이커머스 인프라 설계 총괄.",
+    technologies: ["Shopify", "Liquid", "JavaScript", "PM", "Spec Ownership"],
+    gradientFrom: "from-stone-900",
+    gradientTo: "to-stone-600",
+    iconType: "portfolio",
+    category: "development",
+    thumbnail: "/images/portfolio/screenshot-marithe.png",
+    detail: {
+      problem: "MARITHÉ는 한국 시장에서 빠르게 확장 중이었으나, 대만·홍콩·마카오 진출은 본사 IP 가이드라인과 현지 운영(통화·결제·물류·CS·POS)이 분리되어 단순 사이트 복제로는 불가능했습니다. 본사·현지 파트너·개발 벤더가 시차를 두고 분산되어 있어 일정·범위·리스크를 통합 관리할 PM 리드가 필요했습니다.",
+      solution: "PM으로서 진출 전략 수립부터 시스템 설계·일정 관리·런칭까지 단독 리드. 본사 브랜드 가이드라인을 유지하면서 현지 운영에 적합한 Shopify 다국가 스토어 구조, 회원·결제·POS·물류 연동 흐름을 설계. 회의록 → 기능정의서 → 화면정의서 → WBS 워크플로우로 다자 협업 비용을 절감했습니다.",
+      features: [
+        "동아시아 3개 시장(대만·홍콩·마카오) 진출 프로젝트 단독 PM 리드",
+        "Shopify 다국가·다통화 스토어 아키텍처 설계",
+        "본사 IP·디자인 가이드라인 유지 + 현지 운영 최적화 정렬",
+        "현지 결제·물류·CS 연동 흐름 정의",
+        "본사·현지 파트너·개발 벤더 간 요구사항 정렬, 우선순위·일정 통제",
+        "회의록 → 기능정의서 → 화면정의서 → WBS 표준 워크플로우 적용",
+      ],
+      role: "PM · 프로젝트 총괄 리드",
+      duration: "2025 ~ 진행 중",
+      liveUrl: "https://www.marithe.com.tw/en/",
+    },
+  },
+  {
     id: "matin-kim-shopify",
     title: "MATIN KIM 대만·홍콩·마카오 진출",
     description: "글로벌 패션 브랜드 MATIN KIM의 대만·홍콩·마카오 시장 진출을 PM으로 리드. Shopify Plus 기반 이커머스 + POS + ERP 연동 전체 설계 총괄.",
