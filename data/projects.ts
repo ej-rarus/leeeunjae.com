@@ -112,6 +112,8 @@ export const projects: Project[] = [
       screenshots: [
         "/images/portfolio/screenshot-cau-philosophy.png",
         "/images/portfolio/shots/cau-philosophy-faculty.png",
+        "/images/portfolio/shots/cau-philosophy-notices.png",
+        "/images/portfolio/shots/cau-philosophy-about.png",
       ],
     },
   },
@@ -144,6 +146,8 @@ export const projects: Project[] = [
       screenshots: [
         "/images/portfolio/screenshot-cau-philinst.png",
         "/images/portfolio/shots/cau-philinst-members.png",
+        "/images/portfolio/shots/cau-philinst-journal.png",
+        "/images/portfolio/shots/cau-philinst-notices.png",
       ],
     },
   },
@@ -173,6 +177,8 @@ export const projects: Project[] = [
       liveUrl: "https://chi-hoo.com",
       screenshots: [
         "/images/portfolio/shots/chihoo-main.png",
+        "/images/portfolio/shots/chihoo-products.png",
+        "/images/portfolio/shots/chihoo-classes.png",
         "/images/portfolio/shots/chihoo-encyclopedia.png",
       ],
     },
@@ -201,6 +207,7 @@ export const projects: Project[] = [
       liveUrl: "https://code-axi.vercel.app/",
       screenshots: [
         "/images/portfolio/shots/codeaxi-main.png",
+        "/images/portfolio/shots/codeaxi-courses.png",
       ],
     },
   },
@@ -231,6 +238,7 @@ export const projects: Project[] = [
       liveUrl: "https://claude-code-next.vercel.app/",
       screenshots: [
         "/images/portfolio/shots/claudecode-main.png",
+        "/images/portfolio/shots/claudecode-install.png",
       ],
     },
   },
@@ -289,6 +297,7 @@ export const projects: Project[] = [
       githubUrl: "https://github.com/ej-rarus/ejaxi",
       screenshots: [
         "/images/portfolio/shots/ejaxi-main.png",
+        "/images/portfolio/shots/ejaxi-guide.png",
       ],
     },
   },
@@ -318,6 +327,7 @@ export const projects: Project[] = [
       liveUrl: "https://kembridge.co.kr",
       screenshots: [
         "/images/portfolio/shots/kembridge-main.png",
+        "/images/portfolio/shots/kembridge-about.png",
       ],
     },
   },
@@ -460,6 +470,8 @@ export const projects: Project[] = [
       githubUrl: "https://github.com/ej-rarus/the-moved-mover-web",
       screenshots: [
         "/images/portfolio/shots/tmm-main.png",
+        "/images/portfolio/shots/tmm-games.png",
+        "/images/portfolio/shots/tmm-devlog.png",
       ],
     },
   },
