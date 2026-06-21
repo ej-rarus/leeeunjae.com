@@ -7,8 +7,8 @@ import { useState, type FormEvent } from 'react';
 const contactCards = [
   {
     label: 'Email',
-    value: 'tony@leeeunjae.com',
-    href: 'mailto:tony@leeeunjae.com',
+    value: 'lpl2001@naver.com',
+    href: 'mailto:lpl2001@naver.com',
     hoverBg: 'hover:bg-blue-600 hover:border-blue-600 dark:hover:bg-blue-600 dark:hover:border-blue-600',
     iconBg: 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400',
     icon: (
@@ -69,7 +69,7 @@ export default function Contact() {
 
     const subject = encodeURIComponent(`[Project] ${name}`);
     const body = encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`);
-    window.location.href = `mailto:tony@leeeunjae.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:lpl2001@naver.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
   };
 
