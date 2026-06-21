@@ -77,6 +77,27 @@ export default async function ProjectDetailPage({ params }: Props) {
             </div>
           </div>
 
+          {/* Video */}
+          {detail.videoUrl && (() => {
+            const match = detail.videoUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/);
+            const videoId = match?.[1];
+            if (!videoId) return null;
+            return (
+              <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm mb-8">
+                <div className="relative w-full overflow-hidden rounded-lg" style={{ paddingTop: '56.25%' }}>
+                  <iframe
+                    src={`https://www.youtube.com/embed/${videoId}`}
+                    title="프로젝트 영상"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    className="absolute inset-0 w-full h-full border-0"
+                  />
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Problem & Solution */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">

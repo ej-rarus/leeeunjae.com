@@ -7,6 +7,7 @@ export interface ProjectDetail {
   retrospective?: string;
   liveUrl?: string;
   githubUrl?: string;
+  videoUrl?: string;
 }
 
 export interface Project {
@@ -278,7 +279,7 @@ export const projects: Project[] = [
       ],
       role: "기획 · 풀스택 개발 (1인 전담)",
       duration: "2024",
-      liveUrl: "https://www.youtube.com/watch?v=ni_NdSsOltY",
+      videoUrl: "https://www.youtube.com/watch?v=ni_NdSsOltY",
     },
   },
   {
@@ -353,6 +354,7 @@ export const projects: Project[] = [
       ],
       role: "기획, 디자인, 풀스택 개발",
       duration: "2023.12",
+      videoUrl: "https://www.youtube.com/watch?v=hMyr1IwnNsU",
     },
   },
   {
