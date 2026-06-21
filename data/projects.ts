@@ -8,6 +8,7 @@ export interface ProjectDetail {
   liveUrl?: string;
   githubUrl?: string;
   videoUrl?: string;
+  screenshots?: string[];
 }
 
 export interface Project {
@@ -50,6 +51,9 @@ export const projects: Project[] = [
       role: "PM · 프로젝트 총괄 리드",
       duration: "2025 ~ 진행 중",
       liveUrl: "https://www.marithe.com.tw/en/",
+      screenshots: [
+        "/images/portfolio/screenshot-marithe.png",
+      ],
     },
   },
   {
@@ -102,6 +106,10 @@ export const projects: Project[] = [
       role: "기획 · 디자인 · 풀스택 개발 · 운영 인계 (1인 전담)",
       duration: "2026.04 ~ 2026.06",
       liveUrl: "https://philosophy.cau.ac.kr",
+      screenshots: [
+        "/images/portfolio/screenshot-cau-philosophy.png",
+        "/images/portfolio/shots/cau-philosophy-faculty.png",
+      ],
     },
   },
   {
@@ -130,6 +138,10 @@ export const projects: Project[] = [
       role: "기획 · 디자인 · 풀스택 개발 · 운영 인계 (1인 전담)",
       duration: "2026.04 ~ 2026.06",
       liveUrl: "https://philinst.cau.ac.kr",
+      screenshots: [
+        "/images/portfolio/screenshot-cau-philinst.png",
+        "/images/portfolio/shots/cau-philinst-members.png",
+      ],
     },
   },
   {
@@ -156,6 +168,10 @@ export const projects: Project[] = [
       role: "기획 · 풀스택 개발 (1인 전담)",
       duration: "2026.01 ~ 운영 중",
       liveUrl: "https://chi-hoo.com",
+      screenshots: [
+        "/images/portfolio/shots/chihoo-main.png",
+        "/images/portfolio/shots/chihoo-encyclopedia.png",
+      ],
     },
   },
   {
@@ -180,6 +196,9 @@ export const projects: Project[] = [
       role: "기획 · 풀스택 개발 (1인 전담)",
       duration: "2026.02 ~",
       liveUrl: "https://code-axi.vercel.app/",
+      screenshots: [
+        "/images/portfolio/shots/codeaxi-main.png",
+      ],
     },
   },
   {
@@ -207,6 +226,9 @@ export const projects: Project[] = [
       role: "기획, 디자인, 프론트엔드 개발",
       duration: "2025.12 ~ 2026.02",
       liveUrl: "https://claude-code-next.vercel.app/",
+      screenshots: [
+        "/images/portfolio/shots/claudecode-main.png",
+      ],
     },
   },
   {
@@ -259,6 +281,9 @@ export const projects: Project[] = [
       duration: "2026.01 ~ 2026.02",
       liveUrl: "https://ejaxi.vercel.app",
       githubUrl: "https://github.com/ej-rarus/ejaxi",
+      screenshots: [
+        "/images/portfolio/shots/ejaxi-main.png",
+      ],
     },
   },
   {
@@ -285,6 +310,9 @@ export const projects: Project[] = [
       role: "프론트엔드 개발, 배포",
       duration: "2024.11 ~ 2024.12",
       liveUrl: "https://kembridge.co.kr",
+      screenshots: [
+        "/images/portfolio/shots/kembridge-main.png",
+      ],
     },
   },
   {
@@ -336,6 +364,9 @@ export const projects: Project[] = [
       role: "기획, 디자인, 프론트엔드 개발",
       duration: "2024.08 ~ 2024.09",
       liveUrl: "https://praywithbeda.com",
+      screenshots: [
+        "/images/portfolio/shots/beda-main.png",
+      ],
     },
   },
   {
@@ -412,6 +443,9 @@ export const projects: Project[] = [
       duration: "2025.08 ~ 진행중",
       liveUrl: "https://themovedmover.com",
       githubUrl: "https://github.com/ej-rarus/the-moved-mover-web",
+      screenshots: [
+        "/images/portfolio/shots/tmm-main.png",
+      ],
     },
   },
   {

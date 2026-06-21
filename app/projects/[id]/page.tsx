@@ -1,5 +1,6 @@
 import Nav from "@/components/layout/Nav";
 import Link from "next/link";
+import Image from "next/image";
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -51,6 +52,12 @@ export default async function ProjectDetailPage({ params }: Props) {
   const videoId = detail.videoUrl
     ? detail.videoUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/)?.[1]
     : null;
+
+  const shots = detail.screenshots ?? [];
+  const hasShots = shots.length > 0;
+
+  let stepIndex = 0;
+  const nextStep = () => String(++stepIndex).padStart(2, "0");
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -110,7 +117,7 @@ export default async function ProjectDetailPage({ params }: Props) {
           {videoId && (
             <section className="mb-20">
               <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
-                /01 — VIDEO
+                /{nextStep()} — VIDEO
               </div>
               <div
                 className="relative w-full overflow-hidden border border-foreground/20"
@@ -128,11 +135,33 @@ export default async function ProjectDetailPage({ params }: Props) {
             </section>
           )}
 
+          {/* Hero Screenshot */}
+          {hasShots && (
+            <section className="mb-20">
+              <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+                /{nextStep()} — VISUAL
+              </div>
+              <div className="relative w-full overflow-hidden border border-foreground/20 bg-foreground/5">
+                <Image
+                  src={shots[0]}
+                  alt={`${project.title} 화면`}
+                  width={1440}
+                  height={900}
+                  className="w-full h-auto block"
+                  priority
+                />
+              </div>
+              <p className="font-label text-[10px] tracking-[0.2em] uppercase text-foreground/50 mt-3">
+                FIG.01 — {project.title}
+              </p>
+            </section>
+          )}
+
           {/* Problem & Solution */}
           <section className="grid md:grid-cols-2 gap-12 md:gap-16 mb-20">
             <div>
               <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
-                /{videoId ? "02" : "01"} — PROBLEM
+                /{nextStep()} — PROBLEM
               </div>
               <h2 className="font-headline font-bold text-2xl md:text-3xl mb-5 leading-tight">
                 문제 정의
@@ -143,7 +172,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             </div>
             <div>
               <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
-                /{videoId ? "03" : "02"} — SOLUTION
+                /{nextStep()} — SOLUTION
               </div>
               <h2 className="font-headline font-bold text-2xl md:text-3xl mb-5 leading-tight">
                 해결 방법
@@ -157,7 +186,7 @@ export default async function ProjectDetailPage({ params }: Props) {
           {/* Features */}
           <section className="mb-20">
             <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
-              /{videoId ? "04" : "03"} — FEATURES
+              /{nextStep()} — FEATURES
             </div>
             <h2 className="font-headline font-bold text-2xl md:text-3xl mb-8 leading-tight">
               주요 작업
@@ -179,11 +208,42 @@ export default async function ProjectDetailPage({ params }: Props) {
             </ul>
           </section>
 
+          {/* Gallery (추가 스크린샷) */}
+          {shots.length > 1 && (
+            <section className="mb-20">
+              <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+                /{nextStep()} — GALLERY
+              </div>
+              <h2 className="font-headline font-bold text-2xl md:text-3xl mb-8 leading-tight">
+                화면
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
+                {shots.slice(1).map((src, i) => (
+                  <figure
+                    key={src}
+                    className="border border-foreground/20 bg-foreground/5 overflow-hidden"
+                  >
+                    <Image
+                      src={src}
+                      alt={`${project.title} 화면 ${i + 2}`}
+                      width={1440}
+                      height={900}
+                      className="w-full h-auto block"
+                    />
+                    <figcaption className="font-label text-[10px] tracking-[0.2em] uppercase text-foreground/50 px-3 py-2 border-t border-foreground/15 bg-background">
+                      FIG.0{i + 2} — {project.title}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Retrospective */}
           {detail.retrospective && (
             <section className="mb-20">
               <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
-                /05 — RETROSPECTIVE
+                /{nextStep()} — RETROSPECTIVE
               </div>
               <h2 className="font-headline font-bold text-2xl md:text-3xl mb-5 leading-tight">
                 회고
