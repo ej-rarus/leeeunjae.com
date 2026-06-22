@@ -496,8 +496,10 @@ export const projects: Project[] = [
       ],
       role: "기획, 디자인, 프론트엔드 개발",
       duration: "2024.03",
+      liveUrl: "https://magi-sooty.vercel.app/",
       githubUrl: "https://github.com/ej-rarus/MAGI",
       screenshots: [
+        "/images/portfolio/shots/magi-main.png",
         "/images/portfolio/screenshot-magi.webp",
       ],
     },
