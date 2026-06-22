@@ -60,7 +60,7 @@ export default async function ProjectDetailPage({ params }: Props) {
   const nextStep = () => String(++stepIndex).padStart(2, "0");
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
       <Nav />
       <main className="pt-20">
         <article className="max-w-5xl mx-auto px-6 lg:px-10 py-16 lg:py-24">
@@ -68,33 +68,33 @@ export default async function ProjectDetailPage({ params }: Props) {
           {/* Breadcrumb */}
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-xs tracking-[0.25em] uppercase font-label text-foreground/60 hover:text-foreground transition-colors mb-12"
+            className="inline-flex items-center gap-2 text-xs tracking-[0.25em] uppercase font-mono text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors mb-12"
           >
             <span aria-hidden="true">←</span>
             <span>BACK / PROJECTS</span>
           </Link>
 
           {/* Eyebrow meta */}
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 font-label text-[11px] tracking-[0.2em] uppercase text-foreground/60 mb-8">
-            <span className="text-foreground font-bold">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[11px] tracking-[0.2em] uppercase mb-8">
+            <span className="text-blue-600 dark:text-blue-400 font-bold">
               {categoryLabel[project.category] ?? project.category.toUpperCase()}
             </span>
-            <span aria-hidden="true">/</span>
-            <span>{detail.duration}</span>
-            <span aria-hidden="true">/</span>
-            <span>{detail.role}</span>
+            <span aria-hidden="true" className="text-gray-300 dark:text-gray-700">/</span>
+            <span className="text-gray-500 dark:text-gray-400">{detail.duration}</span>
+            <span aria-hidden="true" className="text-gray-300 dark:text-gray-700">/</span>
+            <span className="text-gray-500 dark:text-gray-400">{detail.role}</span>
           </div>
 
           {/* Editorial title */}
           <h1
-            className="font-headline font-bold tracking-tight leading-[0.95] mb-8"
+            className="font-headline font-bold text-gray-900 dark:text-white tracking-tight leading-[0.95] mb-8"
             style={{ fontSize: "clamp(2.5rem, 6vw, 5.5rem)" }}
           >
             {project.title}
           </h1>
 
           {/* Lead description */}
-          <p className="text-lg md:text-xl leading-relaxed text-foreground/80 max-w-3xl mb-12">
+          <p className="text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300 max-w-3xl mb-12">
             {project.description}
           </p>
 
@@ -103,7 +103,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className="inline-flex items-center px-3 py-1.5 text-[11px] font-label tracking-[0.1em] uppercase border border-foreground/30 hover:border-foreground transition-colors"
+                className="inline-flex items-center px-3 py-1.5 text-[11px] font-mono tracking-[0.1em] uppercase text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 hover:border-gray-900 dark:hover:border-white transition-colors"
               >
                 {tech}
               </span>
@@ -111,16 +111,16 @@ export default async function ProjectDetailPage({ params }: Props) {
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-foreground/20 mb-16" />
+          <div className="h-px bg-gray-200 dark:bg-gray-800 mb-16" />
 
           {/* Video */}
           {videoId && (
             <section className="mb-20">
-              <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+              <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-blue-600 dark:text-blue-400 mb-4">
                 /{nextStep()} — VIDEO
               </div>
               <div
-                className="relative w-full overflow-hidden border border-foreground/20"
+                className="relative w-full overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800"
                 style={{ paddingTop: "56.25%" }}
               >
                 <iframe
@@ -138,10 +138,10 @@ export default async function ProjectDetailPage({ params }: Props) {
           {/* Hero Screenshot */}
           {hasShots && (
             <section className="mb-20">
-              <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+              <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-blue-600 dark:text-blue-400 mb-4">
                 /{nextStep()} — VISUAL
               </div>
-              <div className="relative w-full overflow-hidden border border-foreground/20 bg-foreground/5">
+              <div className="relative w-full overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
                 <Image
                   src={shots[0]}
                   alt={`${project.title} 화면`}
@@ -151,7 +151,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                   priority
                 />
               </div>
-              <p className="font-label text-[10px] tracking-[0.2em] uppercase text-foreground/50 mt-3">
+              <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-gray-400 dark:text-gray-500 mt-3">
                 FIG.01 — {project.title}
               </p>
             </section>
@@ -160,24 +160,24 @@ export default async function ProjectDetailPage({ params }: Props) {
           {/* Problem & Solution */}
           <section className="grid md:grid-cols-2 gap-12 md:gap-16 mb-20">
             <div>
-              <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+              <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-blue-600 dark:text-blue-400 mb-4">
                 /{nextStep()} — PROBLEM
               </div>
-              <h2 className="font-headline font-bold text-2xl md:text-3xl mb-5 leading-tight">
+              <h2 className="font-headline font-bold text-2xl md:text-3xl text-gray-900 dark:text-white mb-5 leading-tight">
                 문제 정의
               </h2>
-              <p className="text-foreground/80 leading-[1.8]">
+              <p className="text-gray-600 dark:text-gray-300 leading-[1.8]">
                 {detail.problem}
               </p>
             </div>
             <div>
-              <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+              <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-blue-600 dark:text-blue-400 mb-4">
                 /{nextStep()} — SOLUTION
               </div>
-              <h2 className="font-headline font-bold text-2xl md:text-3xl mb-5 leading-tight">
+              <h2 className="font-headline font-bold text-2xl md:text-3xl text-gray-900 dark:text-white mb-5 leading-tight">
                 해결 방법
               </h2>
-              <p className="text-foreground/80 leading-[1.8]">
+              <p className="text-gray-600 dark:text-gray-300 leading-[1.8]">
                 {detail.solution}
               </p>
             </div>
@@ -185,22 +185,22 @@ export default async function ProjectDetailPage({ params }: Props) {
 
           {/* Features */}
           <section className="mb-20">
-            <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+            <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-blue-600 dark:text-blue-400 mb-4">
               /{nextStep()} — FEATURES
             </div>
-            <h2 className="font-headline font-bold text-2xl md:text-3xl mb-8 leading-tight">
+            <h2 className="font-headline font-bold text-2xl md:text-3xl text-gray-900 dark:text-white mb-8 leading-tight">
               주요 작업
             </h2>
-            <ul className="divide-y divide-foreground/15 border-t border-b border-foreground/15">
+            <ul className="divide-y divide-gray-200 dark:divide-gray-800 border-t border-b border-gray-200 dark:border-gray-800">
               {detail.features.map((feature, i) => (
                 <li
                   key={i}
                   className="flex items-start gap-6 py-5 group"
                 >
-                  <span className="font-label text-[11px] tracking-[0.2em] text-foreground/40 group-hover:text-foreground transition-colors pt-1 w-10 shrink-0">
+                  <span className="font-mono text-[11px] tracking-[0.2em] text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors pt-1 w-10 shrink-0">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="text-foreground/85 leading-relaxed flex-1">
+                  <span className="text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
                     {feature}
                   </span>
                 </li>
@@ -211,17 +211,17 @@ export default async function ProjectDetailPage({ params }: Props) {
           {/* Gallery (추가 스크린샷) */}
           {shots.length > 1 && (
             <section className="mb-20">
-              <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+              <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-blue-600 dark:text-blue-400 mb-4">
                 /{nextStep()} — GALLERY
               </div>
-              <h2 className="font-headline font-bold text-2xl md:text-3xl mb-8 leading-tight">
+              <h2 className="font-headline font-bold text-2xl md:text-3xl text-gray-900 dark:text-white mb-8 leading-tight">
                 화면
               </h2>
               <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
                 {shots.slice(1).map((src, i) => (
                   <figure
                     key={src}
-                    className="border border-foreground/20 bg-foreground/5 overflow-hidden"
+                    className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 overflow-hidden"
                   >
                     <Image
                       src={src}
@@ -230,7 +230,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                       height={900}
                       className="w-full h-auto block"
                     />
-                    <figcaption className="font-label text-[10px] tracking-[0.2em] uppercase text-foreground/50 px-3 py-2 border-t border-foreground/15 bg-background">
+                    <figcaption className="font-mono text-[10px] tracking-[0.2em] uppercase text-gray-400 dark:text-gray-500 px-4 py-2.5 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
                       FIG.0{i + 2} — {project.title}
                     </figcaption>
                   </figure>
@@ -242,20 +242,20 @@ export default async function ProjectDetailPage({ params }: Props) {
           {/* Retrospective */}
           {detail.retrospective && (
             <section className="mb-20">
-              <div className="font-label text-[11px] tracking-[0.25em] uppercase text-foreground/60 mb-4">
+              <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-blue-600 dark:text-blue-400 mb-4">
                 /{nextStep()} — RETROSPECTIVE
               </div>
-              <h2 className="font-headline font-bold text-2xl md:text-3xl mb-5 leading-tight">
+              <h2 className="font-headline font-bold text-2xl md:text-3xl text-gray-900 dark:text-white mb-5 leading-tight">
                 회고
               </h2>
-              <p className="text-foreground/80 leading-[1.8] max-w-3xl">
+              <p className="text-gray-600 dark:text-gray-300 leading-[1.8] max-w-3xl">
                 {detail.retrospective}
               </p>
             </section>
           )}
 
           {/* Divider */}
-          <div className="h-px bg-foreground/20 mb-12" />
+          <div className="h-px bg-gray-200 dark:bg-gray-800 mb-12" />
 
           {/* CTA Links */}
           <div className="flex flex-wrap gap-3">
@@ -264,7 +264,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                 href={detail.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 px-6 py-3 bg-foreground text-background font-label text-[12px] tracking-[0.18em] uppercase hover:bg-foreground/85 transition-colors"
+                className="group inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-mono text-[12px] tracking-[0.18em] uppercase hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
               >
                 <span>VISIT SITE</span>
                 <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">↗</span>
@@ -275,7 +275,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                 href={detail.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 px-6 py-3 border border-foreground/40 hover:border-foreground hover:bg-foreground hover:text-background font-label text-[12px] tracking-[0.18em] uppercase transition-colors"
+                className="group inline-flex items-center gap-3 px-7 py-3.5 rounded-full border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-gray-900 dark:hover:border-white hover:text-gray-900 dark:hover:text-white font-mono text-[12px] tracking-[0.18em] uppercase transition-colors"
               >
                 <span>GITHUB</span>
                 <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">↗</span>
@@ -283,7 +283,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             )}
             <Link
               href="/projects"
-              className="group inline-flex items-center gap-3 px-6 py-3 border border-foreground/40 hover:border-foreground font-label text-[12px] tracking-[0.18em] uppercase transition-colors"
+              className="group inline-flex items-center gap-3 px-7 py-3.5 rounded-full border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-gray-900 dark:hover:border-white hover:text-gray-900 dark:hover:text-white font-mono text-[12px] tracking-[0.18em] uppercase transition-colors"
             >
               <span aria-hidden="true" className="transition-transform group-hover:-translate-x-1">←</span>
               <span>ALL PROJECTS</span>
