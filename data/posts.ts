@@ -24,6 +24,8 @@ export const posts: Post[] = [
 
 그래서 이 프로젝트는 단순한 팬메이드 화면 구현이 아니라, 참고 이미지를 웹 UI 문법으로 번역하는 작업이 되었습니다.
 
+![MAGI 스타일 의사결정 콘솔 스크린샷](/images/portfolio/shots/magi-main.png)
+
 ## 기술 스택
 
 - React 19

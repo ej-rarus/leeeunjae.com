@@ -1,4 +1,5 @@
 import Nav from "@/components/layout/Nav";
+import Image from "next/image";
 import Link from "next/link";
 import { posts } from "@/data/posts";
 import { notFound } from "next/navigation";
@@ -65,7 +66,30 @@ function renderContent(content: string) {
       continue;
     }
 
-    if (line.startsWith("## ")) {
+    const imageMatch = line.match(/^!\[(.*?)\]\((.*?)\)$/);
+
+    if (imageMatch) {
+      const [, alt, src] = imageMatch;
+      elements.push(
+        <figure key={i} className="my-8">
+          <div className="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-900">
+            <Image
+              src={src}
+              alt={alt}
+              width={1440}
+              height={900}
+              sizes="(min-width: 768px) 704px, calc(100vw - 64px)"
+              className="h-auto w-full"
+            />
+          </div>
+          {alt ? (
+            <figcaption className="mt-3 text-center text-sm text-gray-500 dark:text-gray-400">
+              {alt}
+            </figcaption>
+          ) : null}
+        </figure>
+      );
+    } else if (line.startsWith("## ")) {
       elements.push(
         <h2
           key={i}
