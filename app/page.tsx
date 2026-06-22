@@ -144,7 +144,7 @@ export default function Home() {
                       src={project.thumbnail}
                       alt={project.title}
                       fill
-                      className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                       sizes="(max-width: 640px) 85vw, (max-width: 1024px) 55vw, 42vw"
                     />
                   ) : (
