@@ -53,6 +53,7 @@ export const en = {
     heading: "Featured Projects",
     filters: {
       all: "All",
+      pm: "PM",
       aiax: "AI·AX",
       dev: "Development",
       research: "Research",

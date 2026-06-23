@@ -44,6 +44,7 @@ interface TimelineSection {
 
 const timelineDataKo: TimelineSection[] = [
   { year: '2026', emoji: '🔥', events: [
+    { title: 'PM Lead (루쿠쿠)', desc: '루쿠쿠 PM Lead로서 MARITHÉ FRANÇOIS GIRBAUD · MATIN KIM의 대만·홍콩·마카오 진출 등 글로벌 브랜드의 동아시아 진출 프로젝트를 단독 리드. 본사·현지·개발 벤더 정렬, 회의록→기능정의→화면정의→WBS 표준화.', tags: ['PM Lead', 'Global Expansion', 'Shopify Plus', 'Spec Ownership'] },
     { title: 'The Moved Mover Studio 설립', desc: '게임과 출판을 위한 1인 크리에이티브 스튜디오 설립. MutaRift(Phaser 기반 로그라이트) 개발 중.', link: 'https://themovedmover.com/', tags: ['인디 스튜디오', '게임 개발', 'Phaser', 'Next.js'] },
     { title: 'P1팀 팀장 (루쿠쿠)', desc: '글로벌 브랜드(FILA, MATIN KIM, MFG)의 Shopify POS 프로젝트 PM. 8인 개발팀 리드.', tags: ['팀 리드', 'Shopify', '프로젝트 관리'] },
     { title: 'CHIHOO 플랫폼 개발', desc: '이끼 전문 브랜드 치후의 웹사이트(chi-hoo.com)와 관리자 대시보드를 풀스택으로 개발. 온라인 스토어, 이끼 도감(118종), 예약·주문제작·출강 문의. Lighthouse 접근성 100점.', link: 'https://chi-hoo.com', tags: ['Next.js', 'Supabase', 'TypeScript', 'Prisma', 'Accessibility 100/100'] },
@@ -94,6 +95,7 @@ const timelineDataKo: TimelineSection[] = [
 
 const timelineDataEn: TimelineSection[] = [
   { year: '2026', emoji: '🔥', events: [
+    { title: 'PM Lead (LUKUKU)', desc: 'PM Lead at LUKUKU. Solo-leading East Asia (Taiwan/HK/Macau) expansion projects for global brands including MARITHÉ FRANÇOIS GIRBAUD and MATIN KIM. Aligning HQ, local partners, and dev vendors with standardized meeting-minutes → spec → wireframe → WBS workflow.', tags: ['PM Lead', 'Global Expansion', 'Shopify Plus', 'Spec Ownership'] },
     { title: 'Founded The Moved Mover Studio', desc: 'Solo creative studio for games and publishing. Developing MutaRift (Phaser-based roguelite).', link: 'https://themovedmover.com/', tags: ['Indie Studio', 'Game Dev', 'Phaser', 'Next.js'] },
     { title: 'P1 Team Lead (LUKUKU)', desc: 'PM for Shopify POS project for global brands (FILA, MATIN KIM, MFG). Leading 8-member dev team.', tags: ['Team Lead', 'Shopify', 'Project Management'] },
     { title: 'CHIHOO Platform Development', desc: 'Full-stack development of moss workshop website (chi-hoo.com) and admin dashboard. Online store, moss encyclopedia (118 species), reservations. Lighthouse Accessibility 100/100.', link: 'https://chi-hoo.com', tags: ['Next.js', 'Supabase', 'TypeScript', 'Prisma', 'Accessibility 100/100'] },

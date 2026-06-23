@@ -9,13 +9,15 @@ interface ProjectCardProps {
   gradientTo: string;
   buttonText?: string;
   href?: string;
-  category: 'ai-ax' | 'research' | 'development' | 'content';
+  category: 'pm' | 'ai-ax' | 'research' | 'development' | 'content';
   thumbnail?: string;
 }
 
 // 카테고리별 색상 매핑
 const getCategoryColor = (category: string) => {
   switch (category) {
+    case 'pm':
+      return 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 border-purple-200 dark:border-purple-700';
     case 'ai-ax':
       return 'bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 border-orange-200 dark:border-orange-700';
     case 'research':
@@ -32,6 +34,8 @@ const getCategoryColor = (category: string) => {
 // 카테고리 한글명 매핑
 const getCategoryLabel = (category: string) => {
   switch (category) {
+    case 'pm':
+      return 'PM';
     case 'ai-ax':
       return 'AI/AX';
     case 'research':

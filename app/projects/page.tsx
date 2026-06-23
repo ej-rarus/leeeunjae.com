@@ -7,11 +7,12 @@ import { useState, useMemo } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { projects, type Project } from '@/data/projects';
 
-const filterKeys = ['all', 'aiax', 'dev', 'research', 'content'] as const;
+const filterKeys = ['all', 'pm', 'aiax', 'dev', 'research', 'content'] as const;
 
 /** Map filter key to data category value */
 const categoryMap: Record<string, string> = {
   all: 'all',
+  pm: 'pm',
   aiax: 'ai-ax',
   dev: 'development',
   research: 'research',

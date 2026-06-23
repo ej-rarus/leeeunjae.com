@@ -21,7 +21,7 @@ export interface Project {
   buttonText?: string;
   href?: string;
   iconType: 'portfolio' | 'mobile-app' | 'api';
-  category: 'ai-ax' | 'research' | 'development' | 'content';
+  category: 'pm' | 'ai-ax' | 'research' | 'development' | 'content';
   thumbnail?: string;
   detail?: ProjectDetail;
 }
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     gradientFrom: "from-stone-900",
     gradientTo: "to-stone-600",
     iconType: "portfolio",
-    category: "development",
+    category: "pm",
     thumbnail: "/images/portfolio/screenshot-marithe.png",
     detail: {
       problem: "MARITHÉ는 한국 시장에서 빠르게 확장 중이었으나, 대만·홍콩·마카오 진출은 본사 IP 가이드라인과 현지 운영(통화·결제·물류·CS·POS)이 분리되어 단순 사이트 복제로는 불가능했습니다. 본사·현지 파트너·개발 벤더가 시차를 두고 분산되어 있어 일정·범위·리스크를 통합 관리할 PM 리드가 필요했습니다.",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     gradientFrom: "from-gray-900",
     gradientTo: "to-gray-700",
     iconType: "portfolio",
-    category: "development",
+    category: "pm",
     thumbnail: "/images/portfolio/screenshot-matinkim.png",
     detail: {
       problem: "MATIN KIM은 국내 시장에서 입지를 굳혔으나, 동아시아권(대만·홍콩·마카오) 진출은 현지 통화·회원·결제·물류·POS 운영이 모두 분리되어 단순 스토어 복제로는 불가능한 상황이었습니다. 현지 파트너·본사 운영팀·개발팀을 동시에 정렬하고 일정·범위·리스크를 통합 관리할 PM 리드가 필요했습니다.",

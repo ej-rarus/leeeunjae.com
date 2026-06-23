@@ -53,6 +53,7 @@ export const ko = {
     heading: "주요 프로젝트",
     filters: {
       all: "전체",
+      pm: "PM",
       aiax: "AI·AX",
       dev: "개발",
       research: "연구",

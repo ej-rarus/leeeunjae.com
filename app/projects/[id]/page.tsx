@@ -43,6 +43,7 @@ export default async function ProjectDetailPage({ params }: Props) {
   const { detail } = project;
 
   const categoryLabel: Record<string, string> = {
+    pm: "PM",
     "ai-ax": "AI · AX",
     research: "RESEARCH",
     development: "DEVELOPMENT",
