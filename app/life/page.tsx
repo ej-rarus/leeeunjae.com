@@ -44,6 +44,7 @@ interface TimelineSection {
 
 const timelineDataKo: TimelineSection[] = [
   { year: '2026', emoji: '🔥', events: [
+    { title: 'PMI 멤버 가입', desc: '글로벌 프로젝트 관리 전문기관 PMI(Project Management Institute)의 멤버로 가입. 국제 표준과 커뮤니티를 바탕으로 프로젝트 관리 전문성 개발을 확장. (2026.07.30)', link: 'https://www.pmi.org/', tags: ['PMI', 'Project Management', 'Professional Development', 'Global Community'] },
     { title: '새벽궤도 채널 오픈', desc: '철학자의 문장과 사유를 오늘의 노래로 다시 쓰는 AI-assisted music project. 가사·선곡·편곡·비주얼 세계관을 직접 기획·제작.', link: 'https://www.youtube.com/@dawn_orbit', tags: ['YouTube', 'AI Music', 'Philosophy', 'Creative Direction'] },
     { title: 'PM Lead (루쿠쿠)', desc: '루쿠쿠 PM Lead로서 MARITHÉ FRANÇOIS GIRBAUD · MATIN KIM의 대만·홍콩·마카오 진출 등 글로벌 브랜드의 동아시아 진출 프로젝트를 단독 리드. 본사·현지·개발 벤더 정렬, 회의록→기능정의→화면정의→WBS 표준화.', tags: ['PM Lead', 'Global Expansion', 'Shopify Plus', 'Spec Ownership'] },
     { title: 'The Moved Mover Studio 설립', desc: '게임과 출판을 위한 1인 크리에이티브 스튜디오 설립. MutaRift(Phaser 기반 로그라이트) 개발 중.', link: 'https://themovedmover.com/', tags: ['인디 스튜디오', '게임 개발', 'Phaser', 'Next.js'] },
@@ -96,6 +97,7 @@ const timelineDataKo: TimelineSection[] = [
 
 const timelineDataEn: TimelineSection[] = [
   { year: '2026', emoji: '🔥', events: [
+    { title: 'Joined PMI', desc: 'Joined the Project Management Institute (PMI) to deepen professional development through global project management standards and community. (2026.07.30)', link: 'https://www.pmi.org/', tags: ['PMI', 'Project Management', 'Professional Development', 'Global Community'] },
     { title: 'Launched DAWN ORBIT', desc: "An AI-assisted music project that reimagines philosophers' words and ideas as contemporary songs. Directing the lyrics, curation, arrangements, and visual world.", link: 'https://www.youtube.com/@dawn_orbit', tags: ['YouTube', 'AI Music', 'Philosophy', 'Creative Direction'] },
     { title: 'PM Lead (LUKUKU)', desc: 'PM Lead at LUKUKU. Solo-leading East Asia (Taiwan/HK/Macau) expansion projects for global brands including MARITHÉ FRANÇOIS GIRBAUD and MATIN KIM. Aligning HQ, local partners, and dev vendors with standardized meeting-minutes → spec → wireframe → WBS workflow.', tags: ['PM Lead', 'Global Expansion', 'Shopify Plus', 'Spec Ownership'] },
     { title: 'Founded The Moved Mover Studio', desc: 'Solo creative studio for games and publishing. Developing MutaRift (Phaser-based roguelite).', link: 'https://themovedmover.com/', tags: ['Indie Studio', 'Game Dev', 'Phaser', 'Next.js'] },
